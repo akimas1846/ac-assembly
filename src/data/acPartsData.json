@@ -99,7 +99,6 @@
       "Chg. Attack Power": 1170,
       "Chg. Impact": 750,
       "Chg. Accum. Impact": 280,
-      "Chg. Consecutive Hits": 2,
       "Direct Hit Adjustment": 195,
       "PA Interference": 127,
       "Cooling": 347,
@@ -152,7 +151,6 @@
       "Chg. Impact": 33,
       "Chg. Accum. Impact": 22,
       "Chg. Blast Radius": 20,
-      "Chg. Consecutive Hits": 6,
       "Direct Hit Adjustment": 165,
       "PA Interference": 142,
       "Effective Range": 78,
@@ -240,7 +238,6 @@
       "Chg. Attack Power": 672,
       "Chg. Impact": 245,
       "Chg. Accum. Impact": 91,
-      "Chg. Consecutive Hits": 3,
       "Direct Hit Adjustment": 220,
       "Recoil": 12,
       "Ideal Range": 180,
@@ -933,7 +930,6 @@
       "Chg. Impact": 95,
       "Chg. Accum. Impact": 39,
       "Chg. Heat Buildup": 90,
-      "Chg. Consecutive Hits": 6,
       "Direct Hit Adjustment": 140,
       "Recoil": 17,
       "Ideal Range": 190,
@@ -1205,7 +1201,7 @@
     {
       "LeftOnly": true,
       "Name": "VP-61PS",
-      "Weapon kinds": "Pulse Shield",
+      "Weapon Kinds": "Pulse Shield",
       "Damage Mitigation": 58,
       "Impact Dampening": 40,
       "IG Damage Mitigation": 78,
@@ -1220,7 +1216,7 @@
     {
       "LeftOnly": true,
       "Name": "SI-24: SU-Q5",
-      "Weapon kinds": "Pulse Shield",
+      "Weapon Kinds": "Pulse Shield",
       "Damage Mitigation": 45,
       "Impact Dampening": 25,
       "IG Damage Mitigation": 65,
@@ -1235,7 +1231,7 @@
     {
       "LeftOnly": true,
       "Name": "SI-27: SU-R8",
-      "Weapon kinds": "Pulse Shield",
+      "Weapon Kinds": "Pulse Shield",
       "Damage Mitigation": 63,
       "Impact Dampening": 48,
       "IG Damage Mitigation": 67,
@@ -1250,7 +1246,7 @@
     {
       "LeftOnly": true,
       "Name": "VP-61PB",
-      "Weapon kinds": "Pulse Buckler",
+      "Weapon Kinds": "Pulse Buckler",
       "Damage Mitigation": 35,
       "Impact Dampening": 35,
       "IG Damage Mitigation": 96,
@@ -1265,7 +1261,7 @@
     {
       "LeftOnly": true,
       "Name": "SI-29:SU-TT/C",
-      "Weapon kinds": "Pulse Bucker",
+      "Weapon Kinds": "Pulse Bucker",
       "Damage Mitigation": 30,
       "Impact Dampening": 56,
       "IG Damage Mitigation": 82,
@@ -1280,7 +1276,7 @@
     {
       "LeftOnly": true,
       "Name": "VE-61PSA",
-      "Weapon kinds": "Pulse Scutum",
+      "Weapon Kinds": "Pulse Scutum",
       "Damage Mitigation": 86,
       "Impact Dampening": 70,
       "IG Damage Mitigation": 21,
@@ -1295,7 +1291,7 @@
     {
       "LeftOnly": true,
       "Name": "IB-C03W4: NGI 028",
-      "Weapon kinds": "Coral Shield",
+      "Weapon Kinds": "Coral Shield",
       "Damage Mitigation": 55,
       "Impact Dampening": 42,
       "IG Damage Mitigation": 68,
@@ -1310,7 +1306,7 @@
     {
       "LeftOnly": false,
       "Name": "DF-GA-09 SHAO-WEI",
-      "Weapon kinds": "Gatling Cannon",
+      "Weapon Kinds": "Gatling Cannon",
       "Attack Power": 24,
       "Impact": 20,
       "Accumulative Impact": 11,
@@ -1329,7 +1325,7 @@
     {
       "LeftOnly": false,
       "Name": "SB-033M MORLEY",
-      "Weapon kinds": "Spread Bazooka",
+      "Weapon Kinds": "Spread Bazooka",
       "Attack Power": 1360,
       "Impact": 1450,
       "Accumulative Impact": 860,
@@ -1346,7 +1342,7 @@
     {
       "LeftOnly": false,
       "Name": "EARSHOT",
-      "Weapon kinds": "Grenade Cannon",
+      "Weapon Kinds": "Grenade Cannon",
       "Attack Power": 2098,
       "Impact": 1455,
       "Accumulative Impact": 1101,
@@ -1363,7 +1359,7 @@
     {
       "LeftOnly": false,
       "Name": "SONGBIRDS",
-      "Weapon kinds": "Grenade Cannon",
+      "Weapon Kinds": "Grenade Cannon",
       "Attack Power": 655,
       "Impact": 635,
       "Accumulative Impact": 494,
@@ -1380,7 +1376,7 @@
     {
       "LeftOnly": false,
       "Name": "VE-60SNA",
-      "Weapon kinds": "Stun Needle Launcher",
+      "Weapon Kinds": "Stun Needle Launcher",
       "Attack Power": 1258,
       "Impact": 641,
       "Accumulative Impact": 339,
@@ -1398,7 +1394,7 @@
     {
       "LeftOnly": false,
       "Name": "VP-60LCS",
-      "Weapon kinds": "Laser Cannon",
+      "Weapon Kinds": "Laser Cannon",
       "Attack Power": 925,
       "Impact": 500,
       "Accumulative Impact": 180,
@@ -1424,7 +1420,7 @@
     {
       "LeftOnly": false,
       "Name": "VE-60LCA",
-      "Weapon kinds": "Laser Cannon",
+      "Weapon Kinds": "Laser Cannon",
       "Attack Power": 633,
       "Impact": 199,
       "Accumulative Impact": 75,
@@ -1433,7 +1429,6 @@
       "Chg. Impact": 330,
       "Chg. Accum. Impact": 185,
       "Chg. Heat Buildup": 1000,
-      "Chg. Consecutive Hits": 3,
       "Direct Hit Adjustment": 145,
       "Recoil": 70,
       "Ideal Range": 240,
@@ -1451,7 +1446,7 @@
     {
       "LeftOnly": false,
       "Name": "VE-60LCB",
-      "Weapon kinds": "Laser Cannon",
+      "Weapon Kinds": "Laser Cannon",
       "Attack Power": 1201,
       "Impact": 650,
       "Accumulative Impact": 180,
@@ -1478,7 +1473,7 @@
     {
       "LeftOnly": false,
       "Name": "VP-60LCD",
-      "Weapon kinds": "Diffuse Laser Cannon",
+      "Weapon Kinds": "Diffuse Laser Cannon",
       "Attack Power": 1308,
       "Impact": 648,
       "Accumulative Impact": 204,
@@ -1505,7 +1500,7 @@
     {
       "LeftOnly": false,
       "Name": "FASAN/60E",
-      "Weapon kinds": "Plasma Cannon",
+      "Weapon Kinds": "Plasma Cannon",
       "Attack Power": 1560,
       "Impact": 840,
       "Accumulative Impact": 570,
@@ -1532,7 +1527,7 @@
     {
       "LeftOnly": false,
       "Name": "KRANICH/60Z",
-      "Weapon kinds": "Pulse Cannon",
+      "Weapon Kinds": "Pulse Cannon",
       "Attack Power": 85,
       "Impact": 20,
       "Accumulative Impact": 10,
@@ -1551,7 +1546,7 @@
     {
       "LeftOnly": false,
       "Name": "EULE/60D",
-      "Weapon kinds": "Pulse Shield Launcher",
+      "Weapon Kinds": "Pulse Shield Launcher",
       "Attack Power": 455,
       "Impact": 640,
       "Accumulative Impact": 461,
@@ -1571,7 +1566,7 @@
     {
       "LeftOnly": false,
       "Name": "IA-C01W3: AURORA",
-      "Weapon kinds": "Light Wave Cannon",
+      "Weapon Kinds": "Light Wave Cannon",
       "Attack Power": 134,
       "Impact": 102,
       "Accumulative Impact": 102,
@@ -1590,7 +1585,7 @@
     {
       "LeftOnly": false,
       "Name": "BML-G1/P20MLT-04",
-      "Weapon kinds": "Missile Launcher",
+      "Weapon Kinds": "Missile Launcher",
       "Attack Power": 103,
       "Impact": 72,
       "Accumulative Impact": 43,
@@ -1608,7 +1603,7 @@
     {
       "LeftOnly": false,
       "Name": "BML-G2/P03MLT-06",
-      "Weapon kinds": "Missile Launcher",
+      "Weapon Kinds": "Missile Launcher",
       "Attack Power": 103,
       "Impact": 72,
       "Accumulative Impact": 43,
@@ -1626,7 +1621,7 @@
     {
       "LeftOnly": false,
       "Name": "BML-G2/P05MLT-10",
-      "Weapon kinds": "Missile Launcher",
+      "Weapon Kinds": "Missile Launcher",
       "Attack Power": 103,
       "Impact": 72,
       "Accumulative Impact": 43,
@@ -1644,7 +1639,7 @@
     {
       "LeftOnly": false,
       "Name": "BML-G2/P19SPL-12",
-      "Weapon kinds": "Split Missle Launcher",
+      "Weapon Kinds": "Split Missle Launcher",
       "Attack Power": 600,
       "Impact": 402,
       "Accumulative Impact": 240,
@@ -1662,7 +1657,7 @@
     {
       "LeftOnly": false,
       "Name": "BML-G2/P16SPL-08",
-      "Weapon kinds": "Split Missle Launcher",
+      "Weapon Kinds": "Split Missle Launcher",
       "Attack Power": 688,
       "Impact": 536,
       "Accumulative Impact": 320,
@@ -1680,7 +1675,7 @@
     {
       "LeftOnly": false,
       "Name": "BML-G2/P17SPL-16",
-      "Weapon kinds": "Split Missle Launcher",
+      "Weapon Kinds": "Split Missle Launcher",
       "Attack Power": 688,
       "Impact": 536,
       "Accumulative Impact": 320,
@@ -1698,7 +1693,7 @@
     {
       "LeftOnly": false,
       "Name": "BML-G1/P31DUO-02",
-      "Weapon kinds": "Dual Missile Launcher",
+      "Weapon Kinds": "Dual Missile Launcher",
       "Attack Power": 148,
       "Impact": 94,
       "Accumulative Impact": 62,
@@ -1716,7 +1711,7 @@
     {
       "LeftOnly": false,
       "Name": "BML-G1/P32DUO-03",
-      "Weapon kinds": "Dual Missile Launcher",
+      "Weapon Kinds": "Dual Missile Launcher",
       "Attack Power": 148,
       "Impact": 94,
       "Accumulative Impact": 62,
@@ -1734,7 +1729,7 @@
     {
       "LeftOnly": false,
       "Name": "BML-G2/P08DUO-03",
-      "Weapon kinds": "Dual Missile Launcher",
+      "Weapon Kinds": "Dual Missile Launcher",
       "Attack Power": 177,
       "Impact": 111,
       "Accumulative Impact": 72,
@@ -1752,7 +1747,7 @@
     {
       "LeftOnly": false,
       "Name": "BML-G1/P01VTC-04",
-      "Weapon kinds": "Vertical Missile Launcher",
+      "Weapon Kinds": "Vertical Missile Launcher",
       "Attack Power": 124,
       "Impact": 89,
       "Accumulative Impact": 55,
@@ -1770,7 +1765,7 @@
     {
       "LeftOnly": false,
       "Name": "BML-G1/P03VTC-08",
-      "Weapon kinds": "Vertical Missile Launcher",
+      "Weapon Kinds": "Vertical Missile Launcher",
       "Attack Power": 124,
       "Impact": 89,
       "Accumulative Impact": 55,
@@ -1788,7 +1783,7 @@
     {
       "LeftOnly": false,
       "Name": "BML-G1/P07VTC-12",
-      "Weapon kinds": "Vertical Missile Launcher",
+      "Weapon Kinds": "Vertical Missile Launcher",
       "Attack Power": 124,
       "Impact": 89,
       "Accumulative Impact": 55,
@@ -1806,7 +1801,7 @@
     {
       "LeftOnly": false,
       "Name": "BML-G3/P04ACT-01",
-      "Weapon kinds": "Active Homing Missile Launcher",
+      "Weapon Kinds": "Active Homing Missile Launcher",
       "Attack Power": 486,
       "Impact": 540,
       "Accumulative Impact": 378,
@@ -1825,7 +1820,7 @@
     {
       "LeftOnly": false,
       "Name": "BML-G3/P05ACT-02",
-      "Weapon kinds": "Active Homing Missile Launcher",
+      "Weapon Kinds": "Active Homing Missile Launcher",
       "Attack Power": 486,
       "Impact": 540,
       "Accumulative Impact": 378,
@@ -1844,7 +1839,7 @@
     {
       "LeftOnly": false,
       "Name": "BML-G1/P29CNT",
-      "Weapon kinds": "Container Missile Launcher",
+      "Weapon Kinds": "Container Missile Launcher",
       "Attack Power": 1422,
       "Impact": 1278,
       "Accumulative Impact": 828,
@@ -1860,7 +1855,7 @@
     {
       "LeftOnly": false,
       "Name": "WR-0999 DELIVERY BOY",
-      "Weapon kinds": "Cluster Missile Launcher",
+      "Weapon Kinds": "Cluster Missile Launcher",
       "Attack Power": 2133,
       "Impact": 2040,
       "Accumulative Impact": 1638,
@@ -1879,7 +1874,7 @@
     {
       "LeftOnly": false,
       "Name": "WS-5001 SOUP",
-      "Weapon kinds": "Scatter Missile Launcher",
+      "Weapon Kinds": "Scatter Missile Launcher",
       "Attack Power": 78,
       "Impact": 77,
       "Accumulative Impact": 55,
@@ -1897,7 +1892,7 @@
     {
       "LeftOnly": false,
       "Name": "45-091 JVLN BETA",
-      "Weapon kinds": "Detonating Missile Launcher",
+      "Weapon Kinds": "Detonating Missile Launcher",
       "Attack Power": 791,
       "Impact": 717,
       "Accumulative Impact": 563,
@@ -1916,7 +1911,7 @@
     {
       "LeftOnly": false,
       "Name": "EL-PW-01 TRUENO",
-      "Weapon kinds": "Needle Missle Launcher",
+      "Weapon Kinds": "Needle Missle Launcher",
       "Attack Power": 415,
       "Impact": 385,
       "Accumulative Impact": 215,
@@ -1935,7 +1930,7 @@
     {
       "LeftOnly": false,
       "Name": "Vvc-703PM",
-      "Weapon kinds": "Plasma Missile Launcher",
+      "Weapon Kinds": "Plasma Missile Launcher",
       "Attack Power": 760,
       "Impact": 384,
       "Accumulative Impact": 248,
@@ -1954,7 +1949,7 @@
     {
       "LeftOnly": false,
       "Name": "Vvc-706PM",
-      "Weapon kinds": "Plasma Missile Launcher",
+      "Weapon Kinds": "Plasma Missile Launcher",
       "Attack Power": 760,
       "Impact": 384,
       "Accumulative Impact": 248,
@@ -1973,7 +1968,7 @@
     {
       "LeftOnly": false,
       "Name": "Vvc-70PM",
-      "Weapon kinds": "Plasma Missile Launcher",
+      "Weapon Kinds": "Plasma Missile Launcher",
       "Attack Power": 760,
       "Impact": 384,
       "Accumulative Impact": 248,
@@ -1992,7 +1987,7 @@
     {
       "LeftOnly": false,
       "Name": "IB-C03W3: NGI 006",
-      "Weapon kinds": "Coral Missile Launcher",
+      "Weapon Kinds": "Coral Missile Launcher",
       "Attack Power": 827,
       "Impact": 720,
       "Accumulative Impact": 720,
@@ -2016,7 +2011,7 @@
     {
       "LeftOnly": false,
       "Name": "BO-044 HUXLEY",
-      "Weapon kinds": "Bullet Orbit",
+      "Weapon Kinds": "Bullet Orbit",
       "Attack Power": 28,
       "Impact": 39,
       "Accumulative Impact": 15,
@@ -2033,7 +2028,7 @@
     {
       "LeftOnly": false,
       "Name": "45-091 ORBT",
-      "Weapon kinds": "Laser Orbit",
+      "Weapon Kinds": "Laser Orbit",
       "Attack Power": 122,
       "Impact": 70,
       "Accumulative Impact": 39,
@@ -2050,7 +2045,7 @@
     {
       "LeftOnly": false,
       "Name": "VP-60LT",
-      "Weapon kinds": "Laser Turret",
+      "Weapon Kinds": "Laser Turret",
       "Attack Power": 146,
       "Impact": 81,
       "Accumulative Impact": 39,
@@ -2068,14 +2063,13 @@
     {
       "LeftOnly": false,
       "Name": "Vvc-700LD",
-      "Weapon kinds": "Laser Drone",
+      "Weapon Kinds": "Laser Drone",
       "Attack Power": 288,
       "Impact": 105,
       "Accumulative Impact": 63,
       "Chg. Attack": 1370,
       "Chg. Impact": 480,
       "Chg. Accum. Impact": 244,
-      "Chg. Consecutive Hits": 2,
       "Direct Hit Adjustment": 135,
       "Guidance": 360,
       "Effective Range": 400,

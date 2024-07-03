@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 import * as d3 from "d3";
 import translation from "../data/translation.json";
 
@@ -6,24 +6,12 @@ function ParallelCoordinates({ data }) {
   const ref = useRef();
 
   useEffect(() => {
+    d3.select(ref.current).selectAll("*").remove();
+
     const margin = { top: 30, right: 10, bottom: 50, left: 10 };
-    const width = 4700 - margin.left - margin.right;
     const height = 700 - margin.top - margin.bottom;
-    // const [simpleWidth, setSimpleWisth] = useState(
-    //   4700 - margin.left - margin.right
-    // );
-    // const [simpleHeight, setSimpleHeight] = useState(
-    //   700 - margin.top - margin.bottom
-    // );
-
-    const svg = d3
-      .select(ref.current)
-      .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom)
-      .append("g")
-      .attr("transform", `translate(${margin.left},${margin.top})`);
-
-    // 1. データからすべてのキーを収集
+    const dimensionWidth = 150;
+    // データからすべてのキーを収集
     const allKeys = new Set();
     data.forEach((d) => Object.keys(d).forEach((key) => allKeys.add(key)));
 
@@ -34,13 +22,27 @@ function ParallelCoordinates({ data }) {
       "Weight",
       ...Array.from(allKeys).filter(
         (key) =>
-          !["Name", "Weapon Kinds", "LeftOnly", "EN Load", "Weight"].includes(
-            key
-          )
+          ![
+            "Name",
+            "Weapon Kinds",
+            "LeftOnly",
+            "EN Load",
+            "Weight",
+          ].includes(key)
       ),
     ];
 
-    // 3. 各データオブジェクトに対して共通のキーを設定
+    const width =
+      dimensions.length * dimensionWidth - margin.left - margin.right;
+
+    const svg = d3
+      .select(ref.current)
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    // 各データオブジェクトに対して共通のキーを設定
     const processedData = data.map((d) => {
       const processed = { ...d };
       dimensions.forEach((dim) => {
