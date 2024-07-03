@@ -1,0 +1,71 @@
+/* Main.css */
+
+/* ヘッダーのスタイル */
+.header {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* ヘッダーのタイトルスタイル */
+.header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* フッターのスタイル */
+.footer {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* コンテナのスタイル */
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+/* コンテンツのスタイル */
+.content {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* セレクトボックスのコンテナのスタイル */
+.select-container {
+  margin-bottom: 20px;
+}
+
+/* セレクトボックスのスタイル */
+.select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+/* フッター内のテキストスタイル */
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}

@@ -1,6 +1,10 @@
-function Header()
-{
-
+import React from "react";
+function Header() {
+  return (
+    <header className="header">
+      <h1>Armerd Core IV Parts Selector</h1>
+    </header>
+  );
 }
 
 export default Header;

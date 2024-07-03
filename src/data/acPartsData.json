@@ -1,7 +1,7 @@
 {
-    "arm unit":[
-     {
-      "Left only": true,
+  "armunit": [
+    {
+      "LeftOnly": true,
       "Name": "PB-033m ASHMEAD",
       "Weapon Kinds": "Pile Bunker",
       "Attack Power": 1688,
@@ -16,9 +16,9 @@
       "Cooling": 284,
       "Weight": 4180,
       "EN Load": 225
-     },
-     {
-      "Left only": true,
+    },
+    {
+      "LeftOnly": true,
       "Name": "DF-ET09 TAI-YANG-SHOU",
       "Weapon Kinds": "Explosive Thrower",
       "Attack Power": 1142,
@@ -36,9 +36,9 @@
       "Ammunition Cost": 600,
       "Weight": 3790,
       "EN Load": 160
-     },
-     {
-      "Left only": true,
+    },
+    {
+      "LeftOnly": true,
       "Name": "WB-0010 DOUBLE TROUBLE",
       "Weapon Kinds": "Chainsaw",
       "Attack Power": 1025,
@@ -53,9 +53,9 @@
       "Cooling": 302,
       "Weight": 5090,
       "EN Load": 108
-     },
-     {
-      "Left only": true,
+    },
+    {
+      "LeftOnly": true,
       "Name": "VP-67EB",
       "Weapon Kinds": "Stun Baton",
       "Attack Power": 293,
@@ -70,9 +70,9 @@
       "Cooling": 1156,
       "Weight": 1720,
       "EN Load": 198
-     },
-     {
-      "Left only": true,
+    },
+    {
+      "LeftOnly": true,
       "Name": "VP-67LD",
       "Weapon Kinds": "Laser Dagger",
       "Attack Power": 752,
@@ -87,9 +87,9 @@
       "Cooling": 1308,
       "Weight": 1350,
       "EN Load": 150
-     },
-     {
-      "Left only": true,
+    },
+    {
+      "LeftOnly": true,
       "Name": "Vvc-770LB",
       "Weapon Kinds": "Laser Blade",
       "Attack Power": 1630,
@@ -105,9 +105,9 @@
       "Cooling": 347,
       "Weight": 2060,
       "EN Load": 245
-     },
-     {
-      "Left only": true,
+    },
+    {
+      "LeftOnly": true,
       "Name": "Vvc-774LS",
       "Weapon Kinds": "Laser Slicer",
       "Attack Power": 1615,
@@ -122,9 +122,9 @@
       "Cooling": 267,
       "Weight": 3260,
       "EN Load": 328
-     },
-     {
-      "Left only": true,
+    },
+    {
+      "LeftOnly": true,
       "Name": "VE-67LLA",
       "Weapon Kinds": "Laser Lance",
       "Attack Power": 1151,
@@ -139,9 +139,9 @@
       "Cooling": 263,
       "Weight": 4520,
       "EN Load": 460
-     },
-     {
-      "Left only": true,
+    },
+    {
+      "LeftOnly": true,
       "Name": "44-143 HMMR",
       "Weapon Kinds": "Plasma Thrower",
       "Attack Power": 1381,
@@ -159,10 +159,10 @@
       "Cooling": 368,
       "Weight": 2410,
       "EN Load": 311
-     },
-     {
-      "Left only": true,
-      "Name": "HI-32: BU-TT\/A",
+    },
+    {
+      "LeftOnly": true,
+      "Name": "HI-32: BU-TT/A",
       "Weapon Kinds": "Pulse Blade",
       "Attack Power": 963,
       "Impact": 710,
@@ -176,9 +176,9 @@
       "Cooling": 282,
       "Weight": 1800,
       "EN Load": 213
-     },
-     {
-      "Left only": true,
+    },
+    {
+      "LeftOnly": true,
       "Name": "IA-C01W2: MOONLIGHT",
       "Weapon Kinds": "Light Wave Blade",
       "Attack Power": 615,
@@ -194,9 +194,9 @@
       "Cooling": 265,
       "Weight": 2200,
       "EN Load": 544
-     },
-     {
-      "Left only": true,
+    },
+    {
+      "LeftOnly": true,
       "Name": "IA-C01W7: ML-REDSHIFT",
       "Weapon Kinds": "Coral Oscillator",
       "Attack Power": 727,
@@ -212,9 +212,9 @@
       "Cooling": 209,
       "Weight": 2200,
       "EN Load": 544
-     },
-     {
-      "Left only": true,
+    },
+    {
+      "LeftOnly": true,
       "Name": "IB-C03W2: WLT 101",
       "Weapon Kinds": "Coral Oscillator",
       "Attack Power": 1350,
@@ -229,9 +229,9 @@
       "Cooling": 199,
       "Weight": 2030,
       "EN Load": 642
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "MA-J-200 RANSETSU-RF",
       "Weapon Kinds": "Burst Rifle",
       "Attack Power": 224,
@@ -253,9 +253,9 @@
       "Ammunition Cost": 100,
       "Weight": 4210,
       "EN Load": 158
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "LR-036 CURTIS",
       "Weapon Kinds": "Linear Rifle",
       "Attack Power": 112,
@@ -278,9 +278,9 @@
       "Ammunition Cost": 100,
       "Weight": 4150,
       "EN Load": 289
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "LR-037 HARRIS",
       "Weapon Kinds": "Linear Rifle",
       "Attack Power": 251,
@@ -303,9 +303,9 @@
       "Ammunition Cost": 200,
       "Weight": 4840,
       "EN Load": 441
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "RF-024 TURNER",
       "Weapon Kinds": "Assault Rifle",
       "Attack Power": 105,
@@ -322,9 +322,9 @@
       "Ammunition Cost": 40,
       "Weight": 3560,
       "EN Load": 102
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "RF-025 SCUDDER",
       "Weapon Kinds": "Assault Rifle",
       "Attack Power": 135,
@@ -341,9 +341,9 @@
       "Ammunition Cost": 50,
       "Weight": 3830,
       "EN Load": 153
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "MA-J-201 RANSETSU-AR",
       "Weapon Kinds": "Burst Assault Rifle",
       "Attack Power": 231,
@@ -360,9 +360,9 @@
       "Ammunition Cost": 40,
       "Weight": 3620,
       "EN Load": 132
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "MG-014 LUDLOW",
       "Weapon Kinds": "Machine Gun",
       "Attack Power": 42,
@@ -379,9 +379,9 @@
       "Ammunition Cost": 20,
       "Weight": 2450,
       "EN Load": 82
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "DF-MG-02 CHANG-CHEN",
       "Weapon Kinds": "Machine Gun",
       "Attack Power": 39,
@@ -398,9 +398,9 @@
       "Ammunition Cost": 20,
       "Weight": 3280,
       "EN Load": 143
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "WR-0555 ATTACHE",
       "Weapon Kinds": "Heavy Machine Gun",
       "Attack Power": 62,
@@ -417,9 +417,9 @@
       "Ammunition Cost": 40,
       "Weight": 5110,
       "EN Load": 303
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "MA-E-210 ETSUJIN",
       "Weapon Kinds": "Burst Machine Gun",
       "Attack Power": 204,
@@ -436,9 +436,9 @@
       "Ammunition Cost": 30,
       "Weight": 2810,
       "EN Load": 98
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "DF-GA-08 HU-BEN",
       "Weapon Kinds": "Gatling Gun",
       "Attack Power": 25,
@@ -455,9 +455,9 @@
       "Ammunition Cost": 30,
       "Weight": 5800,
       "EN Load": 425
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "SG-026 HALDEMAN",
       "Weapon Kinds": "Shotgun",
       "Attack Power": 576,
@@ -472,9 +472,9 @@
       "Ammunition Cost": 200,
       "Weight": 3660,
       "EN Load": 185
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "SG-027 ZIMMERMAN",
       "Weapon Kinds": "Shotgun",
       "Attack Power": 800,
@@ -489,9 +489,9 @@
       "Ammunition Cost": 350,
       "Weight": 4400,
       "EN Load": 242
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "WR-0777 SWEET SIXTEEN",
       "Weapon Kinds": "Shotgun",
       "Attack Power": 85,
@@ -506,9 +506,9 @@
       "Ammunition Cost": 30,
       "Weight": 1640,
       "EN Load": 268
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "HG-003 COQUILLETT",
       "Weapon Kinds": "Handgun",
       "Attack Power": 166,
@@ -525,9 +525,9 @@
       "Ammunition Cost": 100,
       "Weight": 1200,
       "EN Load": 122
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "HG-004 DUCKETT",
       "Weapon Kinds": "Handgun",
       "Attack Power": 235,
@@ -544,9 +544,9 @@
       "Ammunition Cost": 120,
       "Weight": 1650,
       "EN Load": 158
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "MA-E-211 SAMPU",
       "Weapon Kinds": "Burst Handgun",
       "Attack Power": 87,
@@ -563,9 +563,9 @@
       "Ammunition Cost": 40,
       "Weight": 960,
       "EN Load": 62
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "EL-PW-00 VIENTO",
       "Weapon Kinds": "Needle Gun",
       "Attack Power": 181,
@@ -582,9 +582,9 @@
       "Ammunition Cost": 80,
       "Weight": 1180,
       "EN Load": 215
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "VP-66EG",
       "Weapon Kinds": "Stun Gun",
       "Attack Power": 104,
@@ -601,9 +601,9 @@
       "Ammunition Cost": 150,
       "Weight": 980,
       "EN Load": 247
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "DF-BA-06 XUAN-GE",
       "Weapon Kinds": "Bazooka",
       "Attack Power": 895,
@@ -618,9 +618,9 @@
       "Ammunition Cost": 450,
       "Weight": 5480,
       "EN Load": 240
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "MAJESTIC",
       "Weapon Kinds": "Bazooka",
       "Attack Power": 1109,
@@ -635,9 +635,9 @@
       "Ammunition Cost": 600,
       "Weight": 4660,
       "EN Load": 178
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "LITTLE GEM",
       "Weapon Kinds": "Bazooka",
       "Attack Power": 819,
@@ -652,9 +652,9 @@
       "Ammunition Cost": 450,
       "Weight": 3100,
       "EN Load": 192
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "44-141 JVLN ALPHA",
       "Weapon Kinds": "Detonating Bazooka",
       "Attack Power": 1375,
@@ -669,9 +669,9 @@
       "Ammunition Cost": 750,
       "Weight": 6300,
       "EN Load": 299
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "DF-GR-07 GOU-CHEN",
       "Weapon Kinds": "Grenade Launcher",
       "Attack Power": 1450,
@@ -686,9 +686,9 @@
       "Ammunition Cost": 1200,
       "Weight": 4841,
       "EN Load": 308
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "DIZZY",
       "Weapon Kinds": "Grenade Launcher",
       "Attack Power": 1650,
@@ -703,9 +703,9 @@
       "Ammunition Cost": 1500,
       "Weight": 6420,
       "EN Load": 455
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "IRIDIUM",
       "Weapon Kinds": "Grenade Launcher",
       "Attack Power": 1090,
@@ -720,9 +720,9 @@
       "Ammunition Cost": 800,
       "Weight": 2020,
       "EN Load": 290
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "MA-T-222 KYORAI",
       "Weapon Kinds": "Napalm Bomb Launcher",
       "Attack Power": 383,
@@ -737,9 +737,9 @@
       "Ammunition Cost": 200,
       "Weight": 2890,
       "EN Load": 60
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "MA-T-223 KYORIKU",
       "Weapon Kinds": "Jamming Bomb Launcher",
       "Attack Power": 0,
@@ -754,9 +754,9 @@
       "Ammunition Cost": 100,
       "Weight": 2600,
       "EN Load": 52
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "WS-1200 THERAPIST",
       "Weapon Kinds": "Stun Bomb Launcher",
       "Attack Power": 141,
@@ -771,9 +771,9 @@
       "Ammunition Cost": 150,
       "Weight": 3180,
       "EN Load": 82
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "WB-0000 BAD COOK",
       "Weapon Kinds": "Flamethrower",
       "Attack Power": 85,
@@ -789,9 +789,9 @@
       "Ammunition Cost": 40,
       "Weight": 6210,
       "EN Load": 403
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "VP-66LR",
       "Weapon Kinds": "Laser Rifle",
       "Attack Power": 256,
@@ -815,9 +815,9 @@
       "Ammunition Cost": 150,
       "Weight": 3560,
       "EN Load": 480
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "VE-66LRA",
       "Weapon Kinds": "Laser Rifle",
       "Attack Power": 443,
@@ -841,9 +841,9 @@
       "Ammunition Cost": 250,
       "Weight": 4940,
       "EN Load": 532
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "VE-66LRB",
       "Weapon Kinds": "Laser Rifle",
       "Attack Power": 778,
@@ -867,10 +867,10 @@
       "Ammunition Cost": 400,
       "Weight": 7760,
       "EN Load": 604
-     },
-     {
-      "Left only": false,
-      "Name": "WUERGER\/66E",
+    },
+    {
+      "LeftOnly": false,
+      "Name": "WUERGER/66E",
       "Weapon Kinds": "Laser Shotgun",
       "Attack Power": 504,
       "Impact": 405,
@@ -893,9 +893,9 @@
       "Ammunition Cost": 200,
       "Weight": 2880,
       "EN Load": 440
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "VP-66LS",
       "Weapon Kinds": "Laser Shotgun",
       "Attack Power": 560,
@@ -920,9 +920,9 @@
       "Ammunition Cost": 300,
       "Weight": 3540,
       "EN Load": 510
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "VP-66LH",
       "Weapon Kinds": "Laser Handgun",
       "Attack Power": 175,
@@ -946,9 +946,9 @@
       "Ammunition Cost": 80,
       "Weight": 2800,
       "EN Load": 395
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "Vvc-760PR",
       "Weapon Kinds": "Plasma Rifle",
       "Attack Power": 936,
@@ -973,9 +973,9 @@
       "Ammunition Cost": 360,
       "Weight": 3330,
       "EN Load": 490
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "IA-C01W1: NEBULA",
       "Weapon Kinds": "Plasma Rifle",
       "Attack Power": 528,
@@ -1000,9 +1000,9 @@
       "Ammunition Cost": 600,
       "Weight": 3890,
       "EN Load": 609
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "IA-C01W6: NB-REDSHIFT",
       "Weapon Kinds": "Coral Rifle",
       "Attack Power": 765,
@@ -1028,9 +1028,9 @@
       "Ammunition Cost": 500,
       "Weight": 4040,
       "EN Load": 667
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "IB-C03W1: WLT 011",
       "Weapon Kinds": "Coral Rifle",
       "Attack Power": 405,
@@ -1055,9 +1055,9 @@
       "Ammunition Cost": 400,
       "Weight": 9030,
       "EN Load": 850
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "44-142 KRSV",
       "Weapon Kinds": "Multi Energy Rifle",
       "Attack Power": 312,
@@ -1082,9 +1082,9 @@
       "Ammunition Cost": 400,
       "Weight": 10120,
       "EN Load": 707
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "HI-16: GU-Q1",
       "Weapon Kinds": "Pulse Gun",
       "Attack Power": 36,
@@ -1101,9 +1101,9 @@
       "Ammunition Cost": 30,
       "Weight": 2110,
       "EN Load": 368
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "HI-18: GU-A2",
       "Weapon Kinds": "Pulse Gun",
       "Attack Power": 68,
@@ -1120,10 +1120,10 @@
       "Ammunition Cost": 60,
       "Weight": 2650,
       "EN Load": 446
-     },
-     {
-      "Left only": false,
-      "Name": "HML-G2\/P19MLT-04",
+    },
+    {
+      "LeftOnly": false,
+      "Name": "HML-G2/P19MLT-04",
       "Weapon Kinds": "Missile Launcher",
       "Attack Power": 216,
       "Impact": 175,
@@ -1138,10 +1138,10 @@
       "Ammunition Cost": 150,
       "Weight": 3250,
       "EN Load": 165
-     },
-     {
-      "Left only": false,
-      "Name": "HML-G3\/P08SPL-06",
+    },
+    {
+      "LeftOnly": false,
+      "Name": "HML-G3/P08SPL-06",
       "Weapon Kinds": "Split Missile Launcher",
       "Attack Power": 1056,
       "Impact": 600,
@@ -1156,9 +1156,9 @@
       "Ammunition Cost": 650,
       "Weight": 4640,
       "EN Load": 180
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "WS-5000 APERITIF",
       "Weapon Kinds": "Siege Missile Launcher",
       "Attack Power": 78,
@@ -1174,10 +1174,10 @@
       "Ammunition Cost": 70,
       "Weight": 4600,
       "EN Load": 165
-     },
-     {
-      "Left only": false,
-      "Name": "PAFU\/66D",
+    },
+    {
+      "LeftOnly": false,
+      "Name": "PAFU/66D",
       "Weapon Kinds": "Pulse Hand Missile",
       "Attack Power": 534,
       "Impact": 366,
@@ -1199,11 +1199,11 @@
       "Ammunition Cost": 300,
       "Weight": 3630,
       "EN Load": 392
-     }
-    ],
-    "back unit":[
-     {
-      "Left only": true,
+    }
+  ],
+  "backunit": [
+    {
+      "LeftOnly": true,
       "Name": "VP-61PS",
       "Weapon kinds": "Pulse Shield",
       "Damage Mitigation": 58,
@@ -1216,9 +1216,9 @@
       "Cooling": 144,
       "Weight": 2700,
       "EN Load": 310
-     },
-     {
-      "Left only": true,
+    },
+    {
+      "LeftOnly": true,
       "Name": "SI-24: SU-Q5",
       "Weapon kinds": "Pulse Shield",
       "Damage Mitigation": 45,
@@ -1231,9 +1231,9 @@
       "Cooling": 88,
       "Weight": 2010,
       "EN Load": 220
-     },
-     {
-      "Left only": true,
+    },
+    {
+      "LeftOnly": true,
       "Name": "SI-27: SU-R8",
       "Weapon kinds": "Pulse Shield",
       "Damage Mitigation": 63,
@@ -1246,9 +1246,9 @@
       "Cooling": 110,
       "Weight": 3150,
       "EN Load": 323
-     },
-     {
-      "Left only": true,
+    },
+    {
+      "LeftOnly": true,
       "Name": "VP-61PB",
       "Weapon kinds": "Pulse Buckler",
       "Damage Mitigation": 35,
@@ -1261,10 +1261,10 @@
       "Cooling": 132,
       "Weight": 1920,
       "EN Load": 285
-     },
-     {
-      "Left only": true,
-      "Name": "SI-29:SU-TT\/C",
+    },
+    {
+      "LeftOnly": true,
+      "Name": "SI-29:SU-TT/C",
       "Weapon kinds": "Pulse Bucker",
       "Damage Mitigation": 30,
       "Impact Dampening": 56,
@@ -1276,9 +1276,9 @@
       "Cooling": 142,
       "Weight": 3380,
       "EN Load": 385
-     },
-     {
-      "Left only": true,
+    },
+    {
+      "LeftOnly": true,
       "Name": "VE-61PSA",
       "Weapon kinds": "Pulse Scutum",
       "Damage Mitigation": 86,
@@ -1291,9 +1291,9 @@
       "Cooling": 113,
       "Weight": 4100,
       "EN Load": 480
-     },
-     {
-      "Left only": true,
+    },
+    {
+      "LeftOnly": true,
       "Name": "IB-C03W4: NGI 028",
       "Weapon kinds": "Coral Shield",
       "Damage Mitigation": 55,
@@ -1306,9 +1306,9 @@
       "Cooling": 100,
       "Weight": 2170,
       "EN Load": 800
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "DF-GA-09 SHAO-WEI",
       "Weapon kinds": "Gatling Cannon",
       "Attack Power": 24,
@@ -1325,9 +1325,9 @@
       "Ammunition Cost": 30,
       "Weight": 5800,
       "EN Load": 425
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "SB-033M MORLEY",
       "Weapon kinds": "Spread Bazooka",
       "Attack Power": 1360,
@@ -1342,9 +1342,9 @@
       "Ammunition Cost": 800,
       "Weight": 6580,
       "EN Load": 465
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "EARSHOT",
       "Weapon kinds": "Grenade Cannon",
       "Attack Power": 2098,
@@ -1359,9 +1359,9 @@
       "Ammunition Cost": 1600,
       "Weight": 7230,
       "EN Load": 386
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "SONGBIRDS",
       "Weapon kinds": "Grenade Cannon",
       "Attack Power": 655,
@@ -1376,9 +1376,9 @@
       "Ammunition Cost": 600,
       "Weight": 5500,
       "EN Load": 285
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "VE-60SNA",
       "Weapon kinds": "Stun Needle Launcher",
       "Attack Power": 1258,
@@ -1394,9 +1394,9 @@
       "Ammunition Cost": 800,
       "Weight": 6150,
       "EN Load": 825
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "VP-60LCS",
       "Weapon kinds": "Laser Cannon",
       "Attack Power": 925,
@@ -1420,9 +1420,9 @@
       "Ammunition Cost": 450,
       "Weight": 5190,
       "EN Load": 683
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "VE-60LCA",
       "Weapon kinds": "Laser Cannon",
       "Attack Power": 633,
@@ -1447,9 +1447,9 @@
       "Ammunition Cost": 450,
       "Weight": 14820,
       "EN Load": 1200
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "VE-60LCB",
       "Weapon kinds": "Laser Cannon",
       "Attack Power": 1201,
@@ -1474,9 +1474,9 @@
       "Ammunition Cost": 10000,
       "Weight": 9270,
       "EN Load": 803
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "VP-60LCD",
       "Weapon kinds": "Diffuse Laser Cannon",
       "Attack Power": 1308,
@@ -1501,10 +1501,10 @@
       "Ammunition Cost": 650,
       "Weight": 7620,
       "EN Load": 784
-     },
-     {
-      "Left only": false,
-      "Name": "FASAN\/60E",
+    },
+    {
+      "LeftOnly": false,
+      "Name": "FASAN/60E",
       "Weapon kinds": "Plasma Cannon",
       "Attack Power": 1560,
       "Impact": 840,
@@ -1528,10 +1528,10 @@
       "Ammunition Cost": 540,
       "Weight": 6270,
       "EN Load": 882
-     },
-     {
-      "Left only": false,
-      "Name": "KRANICH\/60Z",
+    },
+    {
+      "LeftOnly": false,
+      "Name": "KRANICH/60Z",
       "Weapon kinds": "Pulse Cannon",
       "Attack Power": 85,
       "Impact": 20,
@@ -1547,10 +1547,10 @@
       "Ammunition Cost": 40,
       "Weight": 2100,
       "EN Load": 652
-     },
-     {
-      "Left only": false,
-      "Name": "EULE\/60D",
+    },
+    {
+      "LeftOnly": false,
+      "Name": "EULE/60D",
       "Weapon kinds": "Pulse Shield Launcher",
       "Attack Power": 455,
       "Impact": 640,
@@ -1567,9 +1567,9 @@
       "Ammunition Cost": 400,
       "Weight": 2768,
       "EN Load": 382
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "IA-C01W3: AURORA",
       "Weapon kinds": "Light Wave Cannon",
       "Attack Power": 134,
@@ -1586,10 +1586,10 @@
       "Ammunition Cost": 80,
       "Weight": 3330,
       "EN Load": 390
-     },
-     {
-      "Left only": false,
-      "Name": "BML-G1\/P20MLT-04",
+    },
+    {
+      "LeftOnly": false,
+      "Name": "BML-G1/P20MLT-04",
       "Weapon kinds": "Missile Launcher",
       "Attack Power": 103,
       "Impact": 72,
@@ -1604,10 +1604,10 @@
       "Ammunition Cost": 80,
       "Weight": 2120,
       "EN Load": 154
-     },
-     {
-      "Left only": false,
-      "Name": "BML-G2\/P03MLT-06",
+    },
+    {
+      "LeftOnly": false,
+      "Name": "BML-G2/P03MLT-06",
       "Weapon kinds": "Missile Launcher",
       "Attack Power": 103,
       "Impact": 72,
@@ -1622,10 +1622,10 @@
       "Ammunition Cost": 80,
       "Weight": 3840,
       "EN Load": 241
-     },
-     {
-      "Left only": false,
-      "Name": "BML-G2\/P05MLT-10",
+    },
+    {
+      "LeftOnly": false,
+      "Name": "BML-G2/P05MLT-10",
       "Weapon kinds": "Missile Launcher",
       "Attack Power": 103,
       "Impact": 72,
@@ -1640,10 +1640,10 @@
       "Ammunition Cost": 80,
       "Weight": 5220,
       "EN Load": 320
-     },
-     {
-      "Left only": false,
-      "Name": "BML-G2\/P19SPL-12",
+    },
+    {
+      "LeftOnly": false,
+      "Name": "BML-G2/P19SPL-12",
       "Weapon kinds": "Split Missle Launcher",
       "Attack Power": 600,
       "Impact": 402,
@@ -1658,10 +1658,10 @@
       "Ammunition Cost": 400,
       "Weight": 3580,
       "EN Load": 325
-     },
-     {
-      "Left only": false,
-      "Name": "BML-G2\/P16SPL-08",
+    },
+    {
+      "LeftOnly": false,
+      "Name": "BML-G2/P16SPL-08",
       "Weapon kinds": "Split Missle Launcher",
       "Attack Power": 688,
       "Impact": 536,
@@ -1676,10 +1676,10 @@
       "Ammunition Cost": 500,
       "Weight": 2800,
       "EN Load": 228
-     },
-     {
-      "Left only": false,
-      "Name": "BML-G2\/P17SPL-16",
+    },
+    {
+      "LeftOnly": false,
+      "Name": "BML-G2/P17SPL-16",
       "Weapon kinds": "Split Missle Launcher",
       "Attack Power": 688,
       "Impact": 536,
@@ -1694,10 +1694,10 @@
       "Ammunition Cost": 500,
       "Weight": 5010,
       "EN Load": 510
-     },
-     {
-      "Left only": false,
-      "Name": "BML-G1\/P31DUO-02",
+    },
+    {
+      "LeftOnly": false,
+      "Name": "BML-G1/P31DUO-02",
       "Weapon kinds": "Dual Missile Launcher",
       "Attack Power": 148,
       "Impact": 94,
@@ -1712,10 +1712,10 @@
       "Ammunition Cost": 70,
       "Weight": 1900,
       "EN Load": 182
-     },
-     {
-      "Left only": false,
-      "Name": "BML-G1\/P32DUO-03",
+    },
+    {
+      "LeftOnly": false,
+      "Name": "BML-G1/P32DUO-03",
       "Weapon kinds": "Dual Missile Launcher",
       "Attack Power": 148,
       "Impact": 94,
@@ -1730,10 +1730,10 @@
       "Ammunition Cost": 70,
       "Weight": 3450,
       "EN Load": 262
-     },
-     {
-      "Left only": false,
-      "Name": "BML-G2\/P08DUO-03",
+    },
+    {
+      "LeftOnly": false,
+      "Name": "BML-G2/P08DUO-03",
       "Weapon kinds": "Dual Missile Launcher",
       "Attack Power": 177,
       "Impact": 111,
@@ -1748,10 +1748,10 @@
       "Ammunition Cost": 100,
       "Weight": 4020,
       "EN Load": 332
-     },
-     {
-      "Left only": false,
-      "Name": "BML-G1\/P01VTC-04",
+    },
+    {
+      "LeftOnly": false,
+      "Name": "BML-G1/P01VTC-04",
       "Weapon kinds": "Vertical Missile Launcher",
       "Attack Power": 124,
       "Impact": 89,
@@ -1766,10 +1766,10 @@
       "Ammunition Cost": 120,
       "Weight": 2240,
       "EN Load": 258
-     },
-     {
-      "Left only": false,
-      "Name": "BML-G1\/P03VTC-08",
+    },
+    {
+      "LeftOnly": false,
+      "Name": "BML-G1/P03VTC-08",
       "Weapon kinds": "Vertical Missile Launcher",
       "Attack Power": 124,
       "Impact": 89,
@@ -1784,10 +1784,10 @@
       "Ammunition Cost": 120,
       "Weight": 3920,
       "EN Load": 380
-     },
-     {
-      "Left only": false,
-      "Name": "BML-G1\/P07VTC-12",
+    },
+    {
+      "LeftOnly": false,
+      "Name": "BML-G1/P07VTC-12",
       "Weapon kinds": "Vertical Missile Launcher",
       "Attack Power": 124,
       "Impact": 89,
@@ -1802,10 +1802,10 @@
       "Ammunition Cost": 120,
       "Weight": 5010,
       "EN Load": 525
-     },
-     {
-      "Left only": false,
-      "Name": "BML-G3\/P04ACT-01",
+    },
+    {
+      "LeftOnly": false,
+      "Name": "BML-G3/P04ACT-01",
       "Weapon kinds": "Active Homing Missile Launcher",
       "Attack Power": 486,
       "Impact": 540,
@@ -1821,10 +1821,10 @@
       "Ammunition Cost": 450,
       "Weight": 2680,
       "EN Load": 213
-     },
-     {
-      "Left only": false,
-      "Name": "BML-G3\/P05ACT-02",
+    },
+    {
+      "LeftOnly": false,
+      "Name": "BML-G3/P05ACT-02",
       "Weapon kinds": "Active Homing Missile Launcher",
       "Attack Power": 486,
       "Impact": 540,
@@ -1840,10 +1840,10 @@
       "Ammunition Cost": 450,
       "Weight": 4320,
       "EN Load": 424
-     },
-     {
-      "Left only": false,
-      "Name": "BML-G1\/P29CNT",
+    },
+    {
+      "LeftOnly": false,
+      "Name": "BML-G1/P29CNT",
       "Weapon kinds": "Container Missile Launcher",
       "Attack Power": 1422,
       "Impact": 1278,
@@ -1856,9 +1856,9 @@
       "Ammunition Cost": 800,
       "Weight": 6370,
       "EN Load": 150
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "WR-0999 DELIVERY BOY",
       "Weapon kinds": "Cluster Missile Launcher",
       "Attack Power": 2133,
@@ -1875,9 +1875,9 @@
       "Ammunition Cost": 600,
       "Weight": 6890,
       "EN Load": 499
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "WS-5001 SOUP",
       "Weapon kinds": "Scatter Missile Launcher",
       "Attack Power": 78,
@@ -1893,9 +1893,9 @@
       "Ammunition Cost": 50,
       "Weight": 5620,
       "EN Load": 680
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "45-091 JVLN BETA",
       "Weapon kinds": "Detonating Missile Launcher",
       "Attack Power": 791,
@@ -1912,9 +1912,9 @@
       "Ammunition Cost": 450,
       "Weight": 4250,
       "EN Load": 425
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "EL-PW-01 TRUENO",
       "Weapon kinds": "Needle Missle Launcher",
       "Attack Power": 415,
@@ -1931,9 +1931,9 @@
       "Ammunition Cost": 300,
       "Weight": 3100,
       "EN Load": 420
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "Vvc-703PM",
       "Weapon kinds": "Plasma Missile Launcher",
       "Attack Power": 760,
@@ -1950,9 +1950,9 @@
       "Ammunition Cost": 100,
       "Weight": 2310,
       "EN Load": 210
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "Vvc-706PM",
       "Weapon kinds": "Plasma Missile Launcher",
       "Attack Power": 760,
@@ -1969,9 +1969,9 @@
       "Ammunition Cost": 100,
       "Weight": 3900,
       "EN Load": 276
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "Vvc-70PM",
       "Weapon kinds": "Plasma Missile Launcher",
       "Attack Power": 760,
@@ -1988,9 +1988,9 @@
       "Ammunition Cost": 150,
       "Weight": 3760,
       "EN Load": 268
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "IB-C03W3: NGI 006",
       "Weapon kinds": "Coral Missile Launcher",
       "Attack Power": 827,
@@ -2012,9 +2012,9 @@
       "Ammunition Cost": 650,
       "Weight": 4200,
       "EN Load": 783
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "BO-044 HUXLEY",
       "Weapon kinds": "Bullet Orbit",
       "Attack Power": 28,
@@ -2029,9 +2029,9 @@
       "Ammunition Cost": 50,
       "Weight": 2230,
       "EN Load": 435
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "45-091 ORBT",
       "Weapon kinds": "Laser Orbit",
       "Attack Power": 122,
@@ -2046,9 +2046,9 @@
       "Ammunition Cost": 100,
       "Weight": 2010,
       "EN Load": 446
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "VP-60LT",
       "Weapon kinds": "Laser Turret",
       "Attack Power": 146,
@@ -2064,9 +2064,9 @@
       "Ammunition Cost": 500,
       "Weight": 2800,
       "EN Load": 560
-     },
-     {
-      "Left only": false,
+    },
+    {
+      "LeftOnly": false,
       "Name": "Vvc-700LD",
       "Weapon kinds": "Laser Drone",
       "Attack Power": 288,
@@ -2087,10 +2087,10 @@
       "Ammunition Cost": 150,
       "Weight": 3800,
       "EN Load": 570
-     }
-    ],
-    "head":[
-     {
+    }
+  ],
+  "head": [
+    {
       "Name": "AH-J-124 BASHO",
       "AP": 1250,
       "Anti-Kinetic Defense": 191,
@@ -2103,9 +2103,9 @@
       "Scan Cooldown Time": 10.8,
       "Weight": 4600,
       "EN Load": 95
-     },
-     {
-      "Name": "AH-J-124\/RC JAILBREAK",
+    },
+    {
+      "Name": "AH-J-124/RC JAILBREAK",
       "AP": 1000,
       "Anti-Kinetic Defense": 181,
       "Anti-Energy Defense": 159,
@@ -2117,8 +2117,8 @@
       "Scan Cooldown Time": 10.8,
       "Weight": 4250,
       "EN Load": 95
-     },
-     {
+    },
+    {
       "Name": "HD-011 MELANDER",
       "AP": 910,
       "Anti-Kinetic Defense": 173,
@@ -2131,8 +2131,8 @@
       "Scan Cooldown Time": 4.2,
       "Weight": 3160,
       "EN Load": 135
-     },
-     {
+    },
+    {
       "Name": "HD-033M VERRILL",
       "AP": 1080,
       "Anti-Kinetic Defense": 188,
@@ -2145,8 +2145,8 @@
       "Scan Cooldown Time": 5.4,
       "Weight": 3830,
       "EN Load": 240
-     },
-     {
+    },
+    {
       "Name": "HD-012 MELANDER C3",
       "AP": 970,
       "Anti-Kinetic Defense": 175,
@@ -2159,8 +2159,8 @@
       "Scan Cooldown Time": 10.8,
       "Weight": 3300,
       "EN Load": 165
-     },
-     {
+    },
+    {
       "Name": "DF-HD-08 TIAN-QIANG",
       "AP": 320,
       "Anti-Kinetic Defense": 142,
@@ -2173,8 +2173,8 @@
       "Scan Cooldown Time": 11.4,
       "Weight": 1230,
       "EN Load": 88
-     },
-     {
+    },
+    {
       "Name": "VP-44S",
       "AP": 850,
       "Anti-Kinetic Defense": 170,
@@ -2187,8 +2187,8 @@
       "Scan Cooldown Time": 5.1,
       "Weight": 3080,
       "EN Load": 148
-     },
-     {
+    },
+    {
       "Name": "VP-44D",
       "AP": 880,
       "Anti-Kinetic Defense": 150,
@@ -2201,9 +2201,9 @@
       "Scan Cooldown Time": 10.2,
       "Weight": 3260,
       "EN Load": 177
-     },
-     {
-      "Name": "NACHTREIHER\/44E",
+    },
+    {
+      "Name": "NACHTREIHER/44E",
       "AP": 590,
       "Anti-Kinetic Defense": 153,
       "Anti-Energy Defense": 155,
@@ -2215,9 +2215,9 @@
       "Scan Cooldown Time": 9.6,
       "Weight": 2320,
       "EN Load": 210
-     },
-     {
-      "Name": "KASUAR\/44Z",
+    },
+    {
+      "Name": "KASUAR/44Z",
       "AP": 400,
       "Anti-Kinetic Defense": 149,
       "Anti-Energy Defense": 157,
@@ -2229,9 +2229,9 @@
       "Scan Cooldown Time": 3.6,
       "Weight": 2590,
       "EN Load": 254
-     },
-     {
-      "Name": "LAMMERGEIER\/44F",
+    },
+    {
+      "Name": "LAMMERGEIER/44F",
       "AP": 300,
       "Anti-Kinetic Defense": 130,
       "Anti-Energy Defense": 153,
@@ -2243,8 +2243,8 @@
       "Scan Cooldown Time": 8,
       "Weight": 1050,
       "EN Load": 220
-     },
-     {
+    },
+    {
       "Name": "VE-44A",
       "AP": 1060,
       "Anti-Kinetic Defense": 179,
@@ -2257,8 +2257,8 @@
       "Scan Cooldown Time": 9.9,
       "Weight": 3640,
       "EN Load": 182
-     },
-     {
+    },
+    {
       "Name": "VE-44B",
       "AP": 1040,
       "Anti-Kinetic Defense": 167,
@@ -2271,8 +2271,8 @@
       "Scan Cooldown Time": 4.8,
       "Weight": 4320,
       "EN Load": 265
-     },
-     {
+    },
+    {
       "Name": "HC-2000 FINDER EYE",
       "AP": 660,
       "Anti-Kinetic Defense": 157,
@@ -2285,9 +2285,9 @@
       "Scan Cooldown Time": 3.6,
       "Weight": 2670,
       "EN Load": 125
-     },
-     {
-      "Name": "HC-2000\/BC SHADE EYE",
+    },
+    {
+      "Name": "HC-2000/BC SHADE EYE",
       "AP": 770,
       "Anti-Kinetic Defense": 174,
       "Anti-Energy Defense": 167,
@@ -2299,8 +2299,8 @@
       "Scan Cooldown Time": 9,
       "Weight": 3090,
       "EN Load": 163
-     },
-     {
+    },
+    {
       "Name": "HC-3000 WRECKER",
       "AP": 1130,
       "Anti-Kinetic Defense": 200,
@@ -2313,8 +2313,8 @@
       "Scan Cooldown Time": 12,
       "Weight": 3800,
       "EN Load": 102
-     },
-     {
+    },
+    {
       "Name": "HS-5000 APPETIZER",
       "AP": 760,
       "Anti-Kinetic Defense": 176,
@@ -2327,8 +2327,8 @@
       "Scan Cooldown Time": 4.8,
       "Weight": 3000,
       "EN Load": 103
-     },
-     {
+    },
+    {
       "Name": "EL-TH-10 FIRMEZA",
       "AP": 480,
       "Anti-Kinetic Defense": 156,
@@ -2341,8 +2341,8 @@
       "Scan Cooldown Time": 9.6,
       "Weight": 2570,
       "EN Load": 134
-     },
-     {
+    },
+    {
       "Name": "EL-PH-00 ALBA",
       "AP": 600,
       "Anti-Kinetic Defense": 171,
@@ -2355,8 +2355,8 @@
       "Scan Cooldown Time": 5.4,
       "Weight": 2800,
       "EN Load": 205
-     },
-     {
+    },
+    {
       "Name": "20-081 MIND ALPHA",
       "AP": 820,
       "Anti-Kinetic Defense": 178,
@@ -2369,8 +2369,8 @@
       "Scan Cooldown Time": 4.8,
       "Weight": 3350,
       "EN Load": 142
-     },
-     {
+    },
+    {
       "Name": "20-082 MIND BETA",
       "AP": 520,
       "Anti-Kinetic Defense": 158,
@@ -2383,8 +2383,8 @@
       "Scan Cooldown Time": 9,
       "Weight": 3460,
       "EN Load": 128
-     },
-     {
+    },
+    {
       "Name": "IA-C01H: EPHEMERA",
       "AP": 990,
       "Anti-Kinetic Defense": 160,
@@ -2397,8 +2397,8 @@
       "Scan Cooldown Time": 6,
       "Weight": 4330,
       "EN Load": 233
-     },
-     {
+    },
+    {
       "Name": "IB-C03H: HAL 826",
       "AP": 930,
       "Anti-Kinetic Defense": 169,
@@ -2411,10 +2411,10 @@
       "Scan Cooldown Time": 11.4,
       "Weight": 3760,
       "EN Load": 215
-     }
-    ],
-    "core":[
-     {
+    }
+  ],
+  "core": [
+    {
       "Name": "AH-J-120 BASHO",
       "AP": 3580,
       "Anti-Kinetic Defense": 435,
@@ -2426,9 +2426,9 @@
       "Generator Supply Adj": 94,
       "Weight": 16100,
       "EN Load": 300
-     },
-     {
-      "Name": "AH-J-120\/RC JAILBREAK",
+    },
+    {
+      "Name": "AH-J-120/RC JAILBREAK",
       "AP": 2400,
       "Anti-Kinetic Defense": 405,
       "Anti-Energy Defense": 368,
@@ -2439,8 +2439,8 @@
       "Generator Supply Adj": 94,
       "Weight": 12350,
       "EN Load": 300
-     },
-     {
+    },
+    {
       "Name": "BD-011 MELANDER",
       "AP": 3230,
       "Anti-Kinetic Defense": 438,
@@ -2452,8 +2452,8 @@
       "Generator Supply Adj": 97,
       "Weight": 15800,
       "EN Load": 304
-     },
-     {
+    },
+    {
       "Name": "BD-012 MELANDER C3",
       "AP": 2830,
       "Anti-Kinetic Defense": 425,
@@ -2465,8 +2465,8 @@
       "Generator Supply Adj": 103,
       "Weight": 14050,
       "EN Load": 322
-     },
-     {
+    },
+    {
       "Name": "DF-BD-08 TIAN-QIANG",
       "AP": 4100,
       "Anti-Kinetic Defense": 273,
@@ -2478,8 +2478,8 @@
       "Generator Supply Adj": 90,
       "Weight": 20650,
       "EN Load": 388
-     },
-     {
+    },
+    {
       "Name": "VP-40S",
       "AP": 3160,
       "Anti-Kinetic Defense": 427,
@@ -2491,9 +2491,9 @@
       "Generator Supply Adj": 102,
       "Weight": 15030,
       "EN Load": 337
-     },
-     {
-      "Name": "NACHTREIHER\/40E",
+    },
+    {
+      "Name": "NACHTREIHER/40E",
       "AP": 2630,
       "Anti-Kinetic Defense": 349,
       "Anti-Energy Defense": 359,
@@ -2504,9 +2504,9 @@
       "Generator Supply Adj": 109,
       "Weight": 9820,
       "EN Load": 330
-     },
-     {
-      "Name": "LAMMERGEIR\/40F",
+    },
+    {
+      "Name": "LAMMERGEIR/40F",
       "AP": 2470,
       "Anti-Kinetic Defense": 330,
       "Anti-Energy Defense": 390,
@@ -2517,8 +2517,8 @@
       "Generator Supply Adj": 110,
       "Weight": 9700,
       "EN Load": 341
-     },
-     {
+    },
+    {
       "Name": "VE-40A",
       "AP": 4320,
       "Anti-Kinetic Defense": 447,
@@ -2530,8 +2530,8 @@
       "Generator Supply Adj": 95,
       "Weight": 21100,
       "EN Load": 432
-     },
-     {
+    },
+    {
       "Name": "CC-2000 ORBITER",
       "AP": 2780,
       "Anti-Kinetic Defense": 393,
@@ -2543,8 +2543,8 @@
       "Generator Supply Adj": 93,
       "Weight": 12650,
       "EN Load": 267
-     },
-     {
+    },
+    {
       "Name": "CC-3000 WRECKER",
       "AP": 3940,
       "Anti-Kinetic Defense": 468,
@@ -2556,8 +2556,8 @@
       "Generator Supply Adj": 100,
       "Weight": 19000,
       "EN Load": 310
-     },
-     {
+    },
+    {
       "Name": "CS-5000 MAIN DISH",
       "AP": 3890,
       "Anti-Kinetic Defense": 476,
@@ -2569,8 +2569,8 @@
       "Generator Supply Adj": 112,
       "Weight": 23600,
       "EN Load": 413
-     },
-     {
+    },
+    {
       "Name": "EL-TC-10 FIRMEZA",
       "AP": 2500,
       "Anti-Kinetic Defense": 384,
@@ -2582,8 +2582,8 @@
       "Generator Supply Adj": 89,
       "Weight": 10890,
       "EN Load": 351
-     },
-     {
+    },
+    {
       "Name": "EL-PC-00 ALBA",
       "AP": 2850,
       "Anti-Kinetic Defense": 370,
@@ -2595,8 +2595,8 @@
       "Generator Supply Adj": 105,
       "Weight": 12000,
       "EN Load": 315
-     },
-     {
+    },
+    {
       "Name": "07-061 MIND ALPHA",
       "AP": 3520,
       "Anti-Kinetic Defense": 440,
@@ -2608,8 +2608,8 @@
       "Generator Supply Adj": 104,
       "Weight": 16510,
       "EN Load": 364
-     },
-     {
+    },
+    {
       "Name": "IA-C01C: EPHMERA",
       "AP": 2710,
       "Anti-Kinetic Defense": 335,
@@ -2621,8 +2621,8 @@
       "Generator Supply Adj": 96,
       "Weight": 13200,
       "EN Load": 412
-     },
-     {
+    },
+    {
       "Name": "IB-C03C: HAL 826",
       "AP": 3670,
       "Anti-Kinetic Defense": 451,
@@ -2634,10 +2634,10 @@
       "Generator Supply Adj": 108,
       "Weight": 18520,
       "EN Load": 366
-     }
-    ],
-    "arms":[
-     {
+    }
+  ],
+  "arms": [
+    {
       "Name": "AA-J-123 BASHO",
       "AP": 2430,
       "Anti-Kinetic Defense": 208,
@@ -2649,9 +2649,9 @@
       "Melee Specialization": 158,
       "Weight": 10480,
       "EN Load": 210
-     },
-     {
-      "Name": "AA-J-123\/RC JAILBREAK",
+    },
+    {
+      "Name": "AA-J-123/RC JAILBREAK",
       "AP": 1000,
       "Anti-Kinetic Defense": 180,
       "Anti-Energy Defense": 190,
@@ -2662,8 +2662,8 @@
       "Melee Specialization": 112,
       "Weight": 8480,
       "EN Load": 210
-     },
-     {
+    },
+    {
       "Name": "AR-011 MELANDER",
       "AP": 2260,
       "Anti-Kinetic Defense": 247,
@@ -2675,8 +2675,8 @@
       "Melee Specialization": 108,
       "Weight": 13650,
       "EN Load": 265
-     },
-     {
+    },
+    {
       "Name": "AR-012 MELANDER C3",
       "AP": 2010,
       "Anti-Kinetic Defense": 239,
@@ -2688,8 +2688,8 @@
       "Melee Specialization": 102,
       "Weight": 12000,
       "EN Load": 232
-     },
-     {
+    },
+    {
       "Name": "DF-AR-08 TIAN-QIANG",
       "AP": 2480,
       "Anti-Kinetic Defense": 260,
@@ -2701,8 +2701,8 @@
       "Melee Specialization": 94,
       "Weight": 20020,
       "EN Load": 295
-     },
-     {
+    },
+    {
       "Name": "DF-AR-09 TIAN-LAO",
       "AP": 3070,
       "Anti-Kinetic Defense": 305,
@@ -2714,8 +2714,8 @@
       "Melee Specialization": 68,
       "Weight": 26740,
       "EN Load": 266
-     },
-     {
+    },
+    {
       "Name": "VP-46S",
       "AP": 2240,
       "Anti-Kinetic Defense": 231,
@@ -2727,8 +2727,8 @@
       "Melee Specialization": 116,
       "Weight": 14020,
       "EN Load": 278
-     },
-     {
+    },
+    {
       "Name": "VP-46D",
       "AP": 1620,
       "Anti-Kinetic Defense": 196,
@@ -2740,9 +2740,9 @@
       "Melee Specialization": 117,
       "Weight": 10990,
       "EN Load": 248
-     },
-     {
-      "Name": "NACHTREIHER\/46E",
+    },
+    {
+      "Name": "NACHTREIHER/46E",
       "AP": 1860,
       "Anti-Kinetic Defense": 204,
       "Anti-Energy Defense": 213,
@@ -2753,9 +2753,9 @@
       "Melee Specialization": 95,
       "Weight": 11420,
       "EN Load": 290
-     },
-     {
-      "Name": "LAMMERGEIR\/46F",
+    },
+    {
+      "Name": "LAMMERGEIR/46F",
       "AP": 1590,
       "Anti-Kinetic Defense": 189,
       "Anti-Energy Defense": 246,
@@ -2766,8 +2766,8 @@
       "Melee Specialization": 115,
       "Weight": 9700,
       "EN Load": 328
-     },
-     {
+    },
+    {
       "Name": "VE-46A",
       "AP": 2660,
       "Anti-Kinetic Defense": 262,
@@ -2779,8 +2779,8 @@
       "Melee Specialization": 98,
       "Weight": 22210,
       "EN Load": 380
-     },
-     {
+    },
+    {
       "Name": "AC-2000 TOOL ARM",
       "AP": 1990,
       "Anti-Kinetic Defense": 207,
@@ -2792,8 +2792,8 @@
       "Melee Specialization": 100,
       "Weight": 11300,
       "EN Load": 216
-     },
-     {
+    },
+    {
       "Name": "AC-3000 WRECKER",
       "AP": 2030,
       "Anti-Kinetic Defense": 232,
@@ -2805,8 +2805,8 @@
       "Melee Specialization": 43,
       "Weight": 14150,
       "EN Load": 220
-     },
-     {
+    },
+    {
       "Name": "AS-5000 SALAD",
       "AP": 2600,
       "Anti-Kinetic Defense": 258,
@@ -2818,8 +2818,8 @@
       "Melee Specialization": 109,
       "Weight": 20940,
       "EN Load": 324
-     },
-     {
+    },
+    {
       "Name": "EL-TA-10 FIRMEZA",
       "AP": 1900,
       "Anti-Kinetic Defense": 210,
@@ -2831,8 +2831,8 @@
       "Melee Specialization": 110,
       "Weight": 11220,
       "EN Load": 270
-     },
-     {
+    },
+    {
       "Name": "EL-PA-00 ALBA",
       "AP": 1750,
       "Anti-Kinetic Defense": 205,
@@ -2844,8 +2844,8 @@
       "Melee Specialization": 85,
       "Weight": 9810,
       "EN Load": 315
-     },
-     {
+    },
+    {
       "Name": "04-101 MIND ALPHA",
       "AP": 2300,
       "Anti-Kinetic Defense": 245,
@@ -2857,8 +2857,8 @@
       "Melee Specialization": 79,
       "Weight": 16960,
       "EN Load": 358
-     },
-     {
+    },
+    {
       "Name": "IA-CO1A: EPHEMERA",
       "AP": 2380,
       "Anti-Kinetic Defense": 219,
@@ -2870,8 +2870,8 @@
       "Melee Specialization": 106,
       "Weight": 12700,
       "EN Load": 312
-     },
-     {
+    },
+    {
       "Name": "IB-C03A: HAL 826",
       "AP": 2210,
       "Anti-Kinetic Defense": 225,
@@ -2883,10 +2883,10 @@
       "Melee Specialization": 104,
       "Weight": 14160,
       "EN Load": 300
-     }
-    ],
-    "legs":[
-     {
+    }
+  ],
+  "legs": [
+    {
       "Name": "AL-J-121 BASHO",
       "AP": 4240,
       "Anti-Kinetic Defense": 362,
@@ -2898,9 +2898,9 @@
       "Jump Height": 29,
       "Weight": 19270,
       "EN Load": 300
-     },
-     {
-      "Name": "AL-J-121\/RC JAILBREAK",
+    },
+    {
+      "Name": "AL-J-121/RC JAILBREAK",
       "AP": 2000,
       "Anti-Kinetic Defense": 351,
       "Anti-Energy Defense": 315,
@@ -2911,8 +2911,8 @@
       "Jump Height": 25,
       "Weight": 18560,
       "EN Load": 300
-     },
-     {
+    },
+    {
       "Name": "LG-011 MELANDER",
       "AP": 4300,
       "Anti-Kinetic Defense": 369,
@@ -2924,8 +2924,8 @@
       "Jump Height": 28,
       "Weight": 17960,
       "EN Load": 365
-     },
-     {
+    },
+    {
       "Name": "LG-013 MELANDER C3",
       "AP": 3980,
       "Anti-Kinetic Defense": 363,
@@ -2937,8 +2937,8 @@
       "Jump Height": 30,
       "Weight": 16520,
       "EN Load": 355
-     },
-     {
+    },
+    {
       "Name": "DF-LG-08 TIAN-QIANG",
       "AP": 5300,
       "Anti-Kinetic Defense": 414,
@@ -2950,8 +2950,8 @@
       "Jump Height": 20,
       "Weight": 26950,
       "EN Load": 400
-     },
-     {
+    },
+    {
       "Name": "VP-422",
       "AP": 4090,
       "Anti-Kinetic Defense": 352,
@@ -2963,9 +2963,9 @@
       "Jump Height": 29,
       "Weight": 17170,
       "EN Load": 387
-     },
-     {
-      "Name": "NACHTREIHER\/42E",
+    },
+    {
+      "Name": "NACHTREIHER/42E",
       "AP": 3500,
       "Anti-Kinetic Defense": 295,
       "Anti-Energy Defense": 330,
@@ -2976,8 +2976,8 @@
       "Jump Height": 52,
       "Weight": 14030,
       "EN Load": 462
-     },
-     {
+    },
+    {
       "Name": "VE-42A",
       "AP": 6000,
       "Anti-Kinetic Defense": 397,
@@ -2989,8 +2989,8 @@
       "Jump Height": 14,
       "Weight": 31580,
       "EN Load": 465
-     },
-     {
+    },
+    {
       "Name": "2C-2000 CRAWLER",
       "AP": 3650,
       "Anti-Kinetic Defense": 326,
@@ -3002,8 +3002,8 @@
       "Jump Height": 27,
       "Weight": 16300,
       "EN Load": 280
-     },
-     {
+    },
+    {
       "Name": "2C-3000 WRECKER",
       "AP": 5220,
       "Anti-Kinetic Defense": 350,
@@ -3015,8 +3015,8 @@
       "Jump Height": 17,
       "Weight": 23230,
       "EN Load": 680
-     },
-     {
+    },
+    {
       "Name": "2S-5000 DESSERT",
       "AP": 5450,
       "Anti-Kinetic Defense": 396,
@@ -3028,8 +3028,8 @@
       "Jump Height": 19,
       "Weight": 27180,
       "EN Load": 420
-     },
-     {
+    },
+    {
       "Name": "EL-TL-10",
       "AP": 3600,
       "Anti-Kinetic Defense": 328,
@@ -3041,8 +3041,8 @@
       "Jump Height": 31,
       "Weight": 11200,
       "EN Load": 378
-     },
-     {
+    },
+    {
       "Name": "EL-PL-00 ALBA",
       "AP": 3850,
       "Anti-Kinetic Defense": 316,
@@ -3054,8 +3054,8 @@
       "Jump Height": 37,
       "Weight": 13150,
       "EN Load": 360
-     },
-     {
+    },
+    {
       "Name": "06-041 MIND ALPHA",
       "AP": 4560,
       "Anti-Kinetic Defense": 370,
@@ -3067,8 +3067,8 @@
       "Jump Height": 25,
       "Weight": 20810,
       "EN Load": 412
-     },
-     {
+    },
+    {
       "Name": "IA-C01L: EPHEMERA",
       "AP": 3800,
       "Anti-Kinetic Defense": 297,
@@ -3080,8 +3080,8 @@
       "Jump Height": 30,
       "Weight": 15200,
       "EN Load": 398
-     },
-     {
+    },
+    {
       "Name": "IB-C03L: HAL 826",
       "AP": 4120,
       "Anti-Kinetic Defense": 359,
@@ -3093,9 +3093,9 @@
       "Jump Height": 31,
       "Weight": 20590,
       "EN Load": 385
-     },
-     {
-      "Name": "KASUAR\/42Z",
+    },
+    {
+      "Name": "KASUAR/42Z",
       "AP": 3580,
       "Anti-Kinetic Defense": 293,
       "Anti-Energy Defense": 328,
@@ -3106,8 +3106,8 @@
       "Jump Height": 80,
       "Weight": 16510,
       "EN Load": 388
-     },
-     {
+    },
+    {
       "Name": "06-042 MIND BETA",
       "AP": 4020,
       "Anti-Kinetic Defense": 340,
@@ -3119,8 +3119,8 @@
       "Jump Height": 60,
       "Weight": 19750,
       "EN Load": 426
-     },
-     {
+    },
+    {
       "Name": "RC-2000 SPRING CHICKEN",
       "AP": 4410,
       "Anti-Kinetic Defense": 406,
@@ -3132,8 +3132,8 @@
       "Jump Height": 70,
       "Weight": 25340,
       "EN Load": 402
-     },
-     {
+    },
+    {
       "Name": "LG-033M VERRILL",
       "AP": 5250,
       "Anti-Kinetic Defense": 402,
@@ -3145,8 +3145,8 @@
       "Jump Height": 15,
       "Weight": 36200,
       "EN Load": 675
-     },
-     {
+    },
+    {
       "Name": "VP-424",
       "AP": 4100,
       "Anti-Kinetic Defense": 366,
@@ -3158,9 +3158,9 @@
       "Jump Height": 18,
       "Weight": 31600,
       "EN Load": 760
-     },
-     {
-      "Name": "LAMMERGIER\/42F",
+    },
+    {
+      "Name": "LAMMERGIER/42F",
       "AP": 3560,
       "Anti-Kinetic Defense": 300,
       "Anti-Energy Defense": 360,
@@ -3171,8 +3171,8 @@
       "Jump Height": 42,
       "Weight": 22430,
       "EN Load": 790
-     },
-     {
+    },
+    {
       "Name": "LG-022T BORNEMISSZA",
       "AP": 9240,
       "Anti-Kinetic Defense": 440,
@@ -3194,8 +3194,8 @@
       "QB Reload Ideal Weight": 100300,
       "AB THrust": 7768,
       "AB EN Consumption": 360
-     },
-     {
+    },
+    {
       "Name": "VE-42B",
       "AP": 8600,
       "Anti-Kinetic Defense": 379,
@@ -3217,8 +3217,8 @@
       "QB Reload Ideal Weight": 91000,
       "AB THrust": 10502,
       "AB EN Consumption": 430
-     },
-     {
+    },
+    {
       "Name": "EL-TL-11",
       "AP": 4860,
       "Anti-Kinetic Defense": 345,
@@ -3240,10 +3240,10 @@
       "QB Reload Ideal Weight": 69300,
       "AB THrust": 8335,
       "AB EN Consumption": 408
-     }
-    ],
-    "generator":[
-     {
+    }
+  ],
+  "generator": [
+    {
       "Name": "AG-J-098 JOSO",
       "EN Capacity": 2300,
       "EN Recharge": 769,
@@ -3252,8 +3252,8 @@
       "Energy Firearm Spec.": 72,
       "Weight": 3420,
       "EN Output": 2600
-     },
-     {
+    },
+    {
       "Name": "AG-E-013 YABA",
       "EN Capacity": 2850,
       "EN Recharge": 1000,
@@ -3262,8 +3262,8 @@
       "Energy Firearm Spec.": 95,
       "Weight": 5080,
       "EN Output": 3000
-     },
-     {
+    },
+    {
       "Name": "AG-T-005 HOKUSHI",
       "EN Capacity": 3160,
       "EN Recharge": 952,
@@ -3272,8 +3272,8 @@
       "Energy Firearm Spec.": 90,
       "Weight": 7080,
       "EN Output": 3810
-     },
-     {
+    },
+    {
       "Name": "DF-GN-02 LING-TAI",
       "EN Capacity": 2000,
       "EN Recharge": 2000,
@@ -3282,8 +3282,8 @@
       "Energy Firearm Spec.": 61,
       "Weight": 3860,
       "EN Output": 2340
-     },
-     {
+    },
+    {
       "Name": "DF-GN-06 MING-TANG",
       "EN Capacity": 2900,
       "EN Recharge": 1250,
@@ -3292,8 +3292,8 @@
       "Energy Firearm Spec.": 76,
       "Weight": 6320,
       "EN Output": 3160
-     },
-     {
+    },
+    {
       "Name": "DF-GN-08 SAN-TAI",
       "EN Capacity": 4420,
       "EN Recharge": 1176,
@@ -3302,8 +3302,8 @@
       "Energy Firearm Spec.": 88,
       "Weight": 10060,
       "EN Output": 3210
-     },
-     {
+    },
+    {
       "Name": "VP-20S",
       "EN Capacity": 2500,
       "EN Recharge": 833,
@@ -3312,8 +3312,8 @@
       "Energy Firearm Spec.": 94,
       "Weight": 3800,
       "EN Output": 3200
-     },
-     {
+    },
+    {
       "Name": "VP-20C",
       "EN Capacity": 2720,
       "EN Recharge": 909,
@@ -3322,8 +3322,8 @@
       "Energy Firearm Spec.": 100,
       "Weight": 5320,
       "EN Output": 3670
-     },
-     {
+    },
+    {
       "Name": "VP-20D",
       "EN Capacity": 3590,
       "EN Recharge": 714,
@@ -3332,8 +3332,8 @@
       "Energy Firearm Spec.": 104,
       "Weight": 11030,
       "EN Output": 4430
-     },
-     {
+    },
+    {
       "Name": "VE-20A",
       "EN Capacity": 2460,
       "EN Recharge": 740,
@@ -3342,8 +3342,8 @@
       "Energy Firearm Spec.": 116,
       "Weight": 3590,
       "EN Output": 3120
-     },
-     {
+    },
+    {
       "Name": "VE-20B",
       "EN Capacity": 3300,
       "EN Recharge": 763,
@@ -3352,8 +3352,8 @@
       "Energy Firearm Spec.": 150,
       "Weight": 5860,
       "EN Output": 2890
-     },
-     {
+    },
+    {
       "Name": "VE-20C",
       "EN Capacity": 3690,
       "EN Recharge": 555,
@@ -3362,8 +3362,8 @@
       "Energy Firearm Spec.": 128,
       "Weight": 10130,
       "EN Output": 4090
-     },
-     {
+    },
+    {
       "Name": "IA-C01G: AORTA",
       "EN Capacity": 3000,
       "EN Recharge": 238,
@@ -3372,8 +3372,8 @@
       "Energy Firearm Spec.": 105,
       "Weight": 4330,
       "EN Output": 3500
-     },
-     {
+    },
+    {
       "Name": "IB-C03B: NGI 000",
       "EN Capacity": 4400,
       "EN Recharge": 250,
@@ -3382,10 +3382,10 @@
       "Energy Firearm Spec.": 110,
       "Weight": 8950,
       "EN Output": 4340
-     }
-    ],
-    "booster":[
-     {
+    }
+  ],
+  "booster": [
+    {
       "Name": "AB-J-137 KIKAKU",
       "Thrust": 5667,
       "Upward Thrust": 4917,
@@ -3401,9 +3401,9 @@
       "Melee Atk. EN Consump.": 425,
       "Weight": 1820,
       "EN Load": 266
-     },
-     {
-      "Name": "BST-G2\/P04",
+    },
+    {
+      "Name": "BST-G2/P04",
       "Thrust": 6001,
       "Upward Thrust": 5400,
       "Upward EN Consumption": 650,
@@ -3418,9 +3418,9 @@
       "Melee Atk. EN Consump.": 470,
       "Weight": 1710,
       "EN Load": 250
-     },
-     {
-      "Name": "BST-G1\/P10",
+    },
+    {
+      "Name": "BST-G1/P10",
       "Thrust": 5734,
       "Upward Thrust": 5084,
       "Upward EN Consumption": 630,
@@ -3435,9 +3435,9 @@
       "Melee Atk. EN Consump.": 529,
       "Weight": 1300,
       "EN Load": 130
-     },
-     {
-      "Name": "BST-G2\/P06SPD",
+    },
+    {
+      "Name": "BST-G2/P06SPD",
       "Thrust": 6801,
       "Upward Thrust": 5217,
       "Upward EN Consumption": 672,
@@ -3452,9 +3452,9 @@
       "Melee Atk. EN Consump.": 507,
       "Weight": 1420,
       "EN Load": 390
-     },
-     {
-      "Name": "ALULA\/21E",
+    },
+    {
+      "Name": "ALULA/21E",
       "Thrust": 6668,
       "Upward Thrust": 5067,
       "Upward EN Consumption": 760,
@@ -3469,8 +3469,8 @@
       "Melee Atk. EN Consump.": 575,
       "Weight": 1900,
       "EN Load": 410
-     },
-     {
+    },
+    {
       "Name": "FLUEGEL",
       "Thrust": 6251,
       "Upward Thrust": 5634,
@@ -3486,9 +3486,9 @@
       "Melee Atk. EN Consump.": 485,
       "Weight": 1980,
       "EN Load": 282
-     },
-     {
-      "Name": "BUERZEL\/21D",
+    },
+    {
+      "Name": "BUERZEL/21D",
       "Thrust": 6167,
       "Upward Thrust": 4834,
       "Upward EN Consumption": 710,
@@ -3503,8 +3503,8 @@
       "Melee Atk. EN Consump.": 588,
       "Weight": 2240,
       "EN Load": 480
-     },
-     {
+    },
+    {
       "Name": "BC-0600 12345",
       "Thrust": 5801,
       "Upward Thrust": 5200,
@@ -3520,8 +3520,8 @@
       "Melee Atk. EN Consump.": 496,
       "Weight": 1360,
       "EN Load": 180
-     },
-     {
+    },
+    {
       "Name": "BC-0400 MULE",
       "Thrust": 5417,
       "Upward Thrust": 4787,
@@ -3537,8 +3537,8 @@
       "Melee Atk. EN Consump.": 390,
       "Weight": 970,
       "EN Load": 200
-     },
-     {
+    },
+    {
       "Name": "BC-0200 GRIDWALKER",
       "Thrust": 6401,
       "Upward Thrust": 6334,
@@ -3554,8 +3554,8 @@
       "Melee Atk. EN Consump.": 520,
       "Weight": 2010,
       "EN Load": 244
-     },
-     {
+    },
+    {
       "Name": "IA-C01B: GILLS",
       "Thrust": 6534,
       "Upward Thrust": 5334,
@@ -3571,8 +3571,8 @@
       "Melee Atk. EN Consump.": 630,
       "Weight": 1590,
       "EN Load": 400
-     },
-     {
+    },
+    {
       "Name": "IB-C03B: NGI 001",
       "Thrust": 6467,
       "Upward Thrust": 6001,
@@ -3588,11 +3588,11 @@
       "Melee Atk. EN Consump.": 558,
       "Weight": 1930,
       "EN Load": 342
-     }
-    ],
-    "fcs":[
-     {
-      "Name": "FCS-G1\/P01",
+    }
+  ],
+  "fcs": [
+    {
+      "Name": "FCS-G1/P01",
       "Close-Range Assist": 38,
       "Medium-Range Assist": 27,
       "Long-Range Assist": 20,
@@ -3600,9 +3600,9 @@
       "Multi-Lock Correction": 40,
       "Weight": 80,
       "EN Load": 198
-     },
-     {
-      "Name": "FCS-G2\/P05",
+    },
+    {
+      "Name": "FCS-G2/P05",
       "Close-Range Assist": 42,
       "Medium-Range Assist": 80,
       "Long-Range Assist": 26,
@@ -3610,9 +3610,9 @@
       "Multi-Lock Correction": 60,
       "Weight": 100,
       "EN Load": 232
-     },
-     {
-      "Name": "FCS-G2\/P10SLT",
+    },
+    {
+      "Name": "FCS-G2/P10SLT",
       "Close-Range Assist": 31,
       "Medium-Range Assist": 41,
       "Long-Range Assist": 29,
@@ -3620,9 +3620,9 @@
       "Multi-Lock Correction": 90,
       "Weight": 120,
       "EN Load": 209
-     },
-     {
-      "Name": "FCS-G2\/P12SML",
+    },
+    {
+      "Name": "FCS-G2/P12SML",
       "Close-Range Assist": 28,
       "Medium-Range Assist": 52,
       "Long-Range Assist": 30,
@@ -3630,8 +3630,8 @@
       "Multi-Lock Correction": 120,
       "Weight": 130,
       "EN Load": 278
-     },
-     {
+    },
+    {
       "Name": "FC-006 ABBOT",
       "Close-Range Assist": 70,
       "Medium-Range Assist": 32,
@@ -3640,8 +3640,8 @@
       "Multi-Lock Correction": 46,
       "Weight": 90,
       "EN Load": 266
-     },
-     {
+    },
+    {
       "Name": "FC-008 TALBOT",
       "Close-Range Assist": 63,
       "Medium-Range Assist": 54,
@@ -3650,8 +3650,8 @@
       "Multi-Lock Correction": 62,
       "Weight": 140,
       "EN Load": 312
-     },
-     {
+    },
+    {
       "Name": "VE-21A",
       "Close-Range Assist": 36,
       "Medium-Range Assist": 67,
@@ -3660,8 +3660,8 @@
       "Multi-Lock Correction": 79,
       "Weight": 85,
       "EN Load": 364
-     },
-     {
+    },
+    {
       "Name": "VE-21B",
       "Close-Range Assist": 15,
       "Medium-Range Assist": 76,
@@ -3670,8 +3670,8 @@
       "Multi-Lock Correction": 70,
       "Weight": 160,
       "EN Load": 388
-     },
-     {
+    },
+    {
       "Name": "IA-C01F: OCELLUS",
       "Close-Range Assist": 90,
       "Medium-Range Assist": 12,
@@ -3680,8 +3680,8 @@
       "Multi-Lock Correction": 50,
       "Weight": 130,
       "EN Load": 292
-     },
-     {
+    },
+    {
       "Name": "IB-C03F: WLT 001",
       "Close-Range Assist": 58,
       "Medium-Range Assist": 77,
@@ -3690,6 +3690,6 @@
       "Multi-Lock Correction": 66,
       "Weight": 150,
       "EN Load": 486
-     }
-    ]
     }
+  ]
+}
