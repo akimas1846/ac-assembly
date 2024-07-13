@@ -2,44 +2,27 @@
 
 /* ヘッダーのスタイル */
 .header {
-  background-color: #2a2a2a;
-  color: #ffffff;
+  background-color: #58afab;
+  color: #ffffffca;
   text-align: center;
   padding: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 
 /* ヘッダーのタイトルスタイル */
 .header h1 {
-  font-size: 24px;
+  font-size: 30px;
   margin: 0;
 }
 
 /* フッターのスタイル */
 .footer {
-  background-color: #2a2a2a;
+  background-color: #58afab;
   color: #ffffff;
   text-align: center;
   padding: 10px;
-  position: fixed;
   bottom: 0;
   width: 100%;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* コンテナのスタイル */
-.container {
-  width: 80%;
-  margin: auto;
-  padding: 20px;
-}
-
-/* コンテンツのスタイル */
-.content {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
 /* セレクトボックスのコンテナのスタイル */
@@ -63,9 +46,25 @@
   font-size: 14px;
 }
 
-/* レスポンシブ対応 */
-@media (max-width: 768px) {
-  .container {
-    width: 90%;
-  }
+/* コンテナのスタイル */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 70%;
+  padding: 20px;
+}
+
+/* コンテンツのスタイル */
+.content {
+  width: 60%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* 平行座標プロットのスタイル */
+.plot-container {
+  width: 65%;
 }

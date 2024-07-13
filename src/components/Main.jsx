@@ -1,9 +1,8 @@
-import React, { useState ,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import acPartsData from "../data/acPartsData.json";
 import ParallelCordinate from "./ParallelCoedinate";
 
 function Main() {
-  // パーツタイプのデータ
   const rightArmunit = acPartsData.armunit.filter((item) => {
     return item.LeftOnly == false;
   });
@@ -59,7 +58,6 @@ function Main() {
       ...prevSelectedParts,
       [partType]: selectedName,
     }));
-    // パーツのデータを更新
     const partData = partTypes.find((part) => part.label === partType).data;
     const selectedData = partData.filter((item) => item.Name === selectedName);
     setSelectedPartData(selectedData);
@@ -74,52 +72,53 @@ function Main() {
   };
 
   return (
-    <div>
-      {partTypes.map((partType, index) => (
-        <div key={index} style={{ marginBottom: "10px" }}>
-          <label>
-            {partType.label}:
-            <select
-              value={selectedParts[partType.label]}
-              onChange={(e) => handleSelectChange(e, partType.label)}
-            >
-              <option value="">Select {partType.label}</option>
-              {partType.data.map((item, idx) => (
-                <option key={idx} value={item.Name}>
-                  {item.Name}
-                </option>
-              ))}
-            </select>
-          </label>
+    <div className="container">
+      <div className="content">
+        {partTypes.map((partType, index) => (
+          <div key={index} style={{ marginBottom: "10px" }}>
+            <label>
+              {partType.label}:
+              <select
+                value={selectedParts[partType.label]}
+                onChange={(e) => handleSelectChange(e, partType.label)}
+              >
+                <option value="">Select {partType.label}</option>
+                {partType.data.map((item, idx) => (
+                  <option key={idx} value={item.Name}>
+                    {item.Name}
+                  </option>
+                ))}
+              </select>
+            </label>
+          </div>
+        ))}
+
+        <div style={{ marginTop: "20px" }}>
+          <h2>選択されたパーツ</h2>
+          <ul>
+            {Object.entries(selectedParts).map(([partType, selectedName]) => (
+              <li key={partType}>
+                <strong>{partType}:</strong> {selectedName || "Not selected"}
+              </li>
+            ))}
+          </ul>
         </div>
-      ))}
 
-      {/* 選択結果の表示 */}
-      <div style={{ marginTop: "20px" }}>
-        <h2>選択されたパーツ</h2>
-        <ul>
-          {Object.entries(selectedParts).map(([partType, selectedName]) => (
-            <li key={partType}>
-              <strong>{partType}:</strong> {selectedName || "Not selected"}
-            </li>
-          ))}
-        </ul>
+        <div style={{ marginTop: "20px" }}>
+          <h2>Parallel Coordinateに表示するパーツを選択</h2>
+          <select onChange={handleParallelCoordinateChange}>
+            {parallelData.map((partType, index) => (
+              <option key={index} value={partType.label}>
+                {partType.label}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
 
-      {/* ParallelCordinateに渡すデータを選択するプルダウンバー */}
-      <div style={{ marginTop: "20px" }}>
-        <h2>Parallel Coordinateに表示するパーツを選択</h2>
-        <select onChange={handleParallelCoordinateChange}>
-          {parallelData.map((partType, index) => (
-            <option key={index} value={partType.label}>
-              {partType.label}
-            </option>
-          ))}
-        </select>
+      <div className="plot-container">
+        <ParallelCordinate data={parallelCoordinateData} />
       </div>
-
-      {/* ParallelCordinateの表示 */}
-      <ParallelCordinate data={parallelCoordinateData} />
     </div>
   );
 }
