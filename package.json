@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.1",
-    "vite": "^5.3.1"
+    "vite": "^5.3.5"
   },
   "name": "ac-assembly",
   "version": "1.0.0",
