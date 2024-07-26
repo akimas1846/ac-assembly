@@ -1,0 +1,69 @@
+/* Main.css */
+
+/* ヘッダーのスタイル */
+.header {
+    background-color: #58afab;
+    color: #ffffffca;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  /* ヘッダーのタイトルスタイル */
+  .header h1 {
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  /* フッターのスタイル */
+  .footer {
+    background-color: #58afab;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* セレクトボックスのコンテナのスタイル */
+  .select-container {
+    margin-bottom: 20px;
+  }
+  
+  /* セレクトボックスのスタイル */
+  .select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ffffff;
+  }
+  
+  /* フッター内のテキストスタイル */
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  
+  .selector-container {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .plot-container {
+    flex: 2;
+    padding: 10px;
+  }
+  
+  .recommendations-container {
+    flex: 1;
+    padding: 10px;
+  }
