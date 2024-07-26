@@ -46,25 +46,24 @@
   font-size: 14px;
 }
 
-/* コンテナのスタイル */
 .container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-  width: 70%;
-  padding: 20px;
 }
 
-/* コンテンツのスタイル */
-.content {
-  width: 60%;
-  background-color: #f0f0f0;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+
+.selector-container {
+  flex: 1;
+  padding: 10px;
 }
 
-/* 平行座標プロットのスタイル */
 .plot-container {
-  width: 65%;
+  flex: 2;
+  padding: 10px;
+}
+
+.recommendations-container {
+  flex: 1;
+  padding: 10px;
 }
