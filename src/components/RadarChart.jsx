@@ -38,7 +38,7 @@ const RadarChartComponent = ({ data, partTypes }) => {
         if (selectedPart) {
           aggregatedData.Weight += selectedPart.Weight || 0;
           aggregatedData["EN Capacity"] += (selectedPart["EN Capacity"] || 0) * 10;
-          aggregatedData.Impact += selectedPart.Impact * 50 || 0;
+          aggregatedData.Impact += selectedPart.Impact * 25 || 0;
           aggregatedData["Direct Hit Adjustment"] += selectedPart["Direct Hit Adjustment"] * 100 || 0;
           aggregatedData["Attack Power"] += (selectedPart["Attack Power"] || 0) * 10;
           aggregatedData.AP += (selectedPart.AP || 0) * 5;

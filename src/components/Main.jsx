@@ -20,6 +20,10 @@ function Main() {
     { label: "Fcs", data: acPartsData.fcs },
   ];
 
+  const unitsPartsType = partTypes.filter((item) =>
+    item.label.includes("unit")
+  );
+  const otherWeapon = partTypes.filter((item) => !item.label.includes("unit"));
   const parallelData = [
     { label: "armunit", data: acPartsData.armunit },
     { label: "backunit", data: acPartsData.backunit },
@@ -47,7 +51,9 @@ function Main() {
   };
 
   const [selectedParts, setSelectedParts] = useState(initialSelectedParts);
-  const [parallelCoordinateData, setParallelCoordinateData] = useState(acPartsData.armunit);
+  const [parallelCoordinateData, setParallelCoordinateData] = useState(
+    acPartsData.armunit
+  );
   const [recommendedLegs, setRecommendedLegs] = useState([]);
   const [recommendedArms, setRecommendedArms] = useState([]);
   const [recommendedGenerator, setRecommendedGenerator] = useState([]);
@@ -130,9 +136,16 @@ function Main() {
   const currentPartTypes =
     activeTab === "weapons"
       ? [
-          ...partTypes.filter((part) => ["Head", "Arms", "Booster"].includes(part.label)),
           ...partTypes.filter((part) =>
-            ["Right Arm unit", "Left Arm unit", "Right Back unit", "Left Back unit"].includes(part.label)
+            ["Head", "Arms", "Booster"].includes(part.label)
+          ),
+          ...partTypes.filter((part) =>
+            [
+              "Right Arm unit",
+              "Left Arm unit",
+              "Right Back unit",
+              "Left Back unit",
+            ].includes(part.label)
           ),
         ]
       : partTypes;
@@ -170,7 +183,8 @@ function Main() {
           </label>
         </div> */}
 
-        {currentPartTypes.map((partType, index) => (
+        <h2>使いたい機体パーツを選択</h2>
+        {otherWeapon.map((partType, index) => (
           <div key={index} style={{ marginBottom: "10px" }}>
             <label>
               {partType.label}:
@@ -236,37 +250,25 @@ function Main() {
       </div>
 
       <div className="recommendations-container">
-        <h2>推奨パーツ</h2>
-        {activeTab === "weapons" && (
-          <div>
-            <h3>推奨レッグ</h3>
-            <ul>
-              {recommendedLegs.map((leg, index) => (
-                <li key={index}>{leg.Name}</li>
-              ))}
-            </ul>
-
-            <h3>推奨アーム</h3>
-            <ul>
-              {recommendedArms.map((arm, index) => (
-                <li key={index}>{arm.Name}</li>
-              ))}
-            </ul>
-
-            <h3>推奨ジェネレーター</h3>
-            <ul>
-              {recommendedGenerator.map((gen, index) => (
-                <li key={index}>{gen.Name}</li>
-              ))}
-            </ul>
+        <h2>推奨武器を選択</h2>
+        {unitsPartsType.map((partType, index) => (
+          <div key={index} style={{ marginBottom: "10px" }}>
+            <label>
+              {partType.label}:
+              <select
+                value={selectedParts[partType.label]}
+                onChange={(e) => handleSelectChange(e, partType.label)}
+              >
+                <option value="">Select {partType.label}</option>
+                {partType.data.map((item, idx) => (
+                  <option key={idx} value={item.Name}>
+                    {item.Name}
+                  </option>
+                ))}
+              </select>
+            </label>
           </div>
-        )}
-        {activeTab === "parts" && (
-          <div>
-            <h3>推奨武器</h3>
-            {/* 武器の推奨表示ロジック */}
-          </div>
-        )}
+        ))}
       </div>
     </div>
   );
