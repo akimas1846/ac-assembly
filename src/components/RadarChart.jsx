@@ -6,6 +6,7 @@ import {
   PolarAngleAxis,
   PolarRadiusAxis,
   ResponsiveContainer,
+  Tooltip,
 } from "recharts";
 
 const RadarChartComponent = ({ data, partTypes }) => {
@@ -21,12 +22,12 @@ const RadarChartComponent = ({ data, partTypes }) => {
 
   const radiusAxisProps = {
     Weight: { domain: [0, 0] },
-    "EN Capacity": { domain: [0, 0] }, // 10倍した後の最大値
+    "EN Capacity": { domain: [0, 0] },
     "Arms Weight": { domain: [0, 0] },
     Impact: { domain: [0, 0] },
     "Direct Hit Adjustment": { domain: [0, 0] },
-    "Attack Power": { domain: [0, 0] }, // 10倍した後の最大値
-    AP: { domain: [0, 0] }, // 5倍した後の最大値
+    "Attack Power": { domain: [0, 0] },
+    AP: { domain: [0, 0] },
   };
 
   Object.entries(data).forEach(([partType, selectedName]) => {
@@ -104,7 +105,7 @@ const RadarChartComponent = ({ data, partTypes }) => {
 
   return (
     <div>
-      <ResponsiveContainer width="100%" height={400}>
+      <ResponsiveContainer width="100%" height={600}>
         <RadarChart data={chartData}>
           <PolarGrid />
           <PolarAngleAxis dataKey="subject" />
@@ -125,7 +126,9 @@ const RadarChartComponent = ({ data, partTypes }) => {
             dot={{ r: 4 }}
             data={upperLimitData}
           />
+          <Tooltip />
         </RadarChart>
+
       </ResponsiveContainer>
       <div>
         {overWeight && <p>積載量超過</p>}
