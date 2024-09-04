@@ -192,7 +192,7 @@ function Main() {
                 value={selectedParts[partType.label]}
                 onChange={(e) => handleSelectChange(e, partType.label)}
               >
-                <option value="">Select {partType.label}</option>
+                <option value="">{partType.label}を選択</option>
                 {partType.data.map((item, idx) => (
                   <option key={idx} value={item.Name}>
                     {item.Name}
@@ -209,7 +209,7 @@ function Main() {
             {Object.entries(selectedPartNames).map(
               ([partType, selectedName]) => (
                 <li key={partType}>
-                  <strong>{partType}:</strong> {selectedName || "Not selected"}
+                  <strong>{partType}:</strong> {selectedName || "選択されていません"}
                 </li>
               )
             )}
@@ -227,14 +227,14 @@ function Main() {
           </select>
         </div>
 
-        <div className="component-toggle">
+        {/* <div className="component-toggle">
           <button onClick={() => handleComponentChange("parallel")}>
             平行座標プロット
           </button>
           <button onClick={() => handleComponentChange("radar")}>
             レーダーチャート
           </button>
-        </div>
+        </div> */}
       </div>
 
       <div className="plot-container">
@@ -263,7 +263,7 @@ function Main() {
                 value={selectedParts[partType.label]}
                 onChange={(e) => handleSelectChange(e, partType.label)}
               >
-                <option value="">Select {partType.label}</option>
+                <option value="">{partType.label}を選択</option>
                 {partType.data.map((item, idx) => (
                   <option key={idx} value={item.Name}>
                     {item.Name}
