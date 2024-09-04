@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import acPartsData from "../data/acPartsData.json";
+import ParallelCoordinate from "./ParallelCoordinate";
 import RadarChart from "./RadarChart";
 
 function Main() {
@@ -22,7 +23,18 @@ function Main() {
   const unitsPartsType = partTypes.filter((item) =>
     item.label.includes("unit")
   );
-  const otherParts = partTypes.filter((item) => !item.label.includes("unit"));
+  const otherWeapon = partTypes.filter((item) => !item.label.includes("unit"));
+  const parallelData = [
+    { label: "armunit", data: acPartsData.armunit },
+    { label: "backunit", data: acPartsData.backunit },
+    { label: "Head", data: acPartsData.head },
+    { label: "Core", data: acPartsData.core },
+    { label: "Arms", data: acPartsData.arms },
+    { label: "Legs", data: acPartsData.legs },
+    { label: "Booster", data: acPartsData.booster },
+    { label: "Generator", data: acPartsData.generator },
+    { label: "Fcs", data: acPartsData.fcs },
+  ];
 
   const initialSelectedParts = {
     "Right Arm unit": "",
@@ -39,14 +51,14 @@ function Main() {
   };
 
   const [selectedParts, setSelectedParts] = useState(initialSelectedParts);
-  const [sortOption, setSortOption] = useState("weight"); // Default sorting option for otherParts
-  const [unitPartsSortOption, setUnitPartsSortOption] = useState("weight"); // Default sorting option for unitParts
-  const [totals, setTotals] = useState({
-    weight: 0,
-    ap: 0,
-    enLoad: 0,
-    attackPower: 0,
-  });
+  const [parallelCoordinateData, setParallelCoordinateData] = useState(
+    acPartsData.armunit
+  );
+  const [recommendedLegs, setRecommendedLegs] = useState([]);
+  const [recommendedArms, setRecommendedArms] = useState([]);
+  const [recommendedGenerator, setRecommendedGenerator] = useState([]);
+  const [activeTab, setActiveTab] = useState("parts");
+  const [activeComponent, setActiveComponent] = useState("parallel");
 
   const handleSelectChange = (e, partType) => {
     const selectedName = e.target.value;
@@ -56,11 +68,18 @@ function Main() {
     }));
   };
 
+  const handleParallelCoordinateChange = (e) => {
+    const selectedPartType = e.target.value;
+    const partData = parallelData.find(
+      (part) => part.label === selectedPartType
+    ).data;
+    setParallelCoordinateData(partData);
+  };
+
   const calculateRecommendations = () => {
     let totalWeight = 0;
     let totalEnLoad = 0;
-    let totalAp = 0;
-    let totalAttackPower = 0;
+    let armLoad = 0;
 
     Object.entries(selectedParts).forEach(([partType, selectedName]) => {
       if (selectedName) {
@@ -73,76 +92,105 @@ function Main() {
           if (selectedPart) {
             totalWeight += selectedPart.Weight || 0;
             totalEnLoad += selectedPart["EN Load"] || 0;
-            totalAp += selectedPart["AP"] || 0;
-            totalAttackPower += selectedPart["Attack Power"] || 0;
+            if (
+              partType.includes("Arm unit") ||
+              partType.includes("Back unit")
+            ) {
+              armLoad += selectedPart.Weight || 0;
+            }
           }
         }
       }
     });
 
-    setTotals({
-      weight: totalWeight,
-      ap: totalAp,
-      enLoad: totalEnLoad,
-      attackPower: totalAttackPower,
-    });
+    const filteredLegs = acPartsData.legs.filter(
+      (leg) => leg["Load Limit"] >= totalWeight
+    );
+    setRecommendedLegs(filteredLegs);
+
+    const filteredArms = acPartsData.arms.filter(
+      (arm) => arm["Arms Load Limit"] >= armLoad
+    );
+    setRecommendedArms(filteredArms);
+
+    const filteredGenerators = acPartsData.generator.filter(
+      (gen) => gen["EN Capacity"] >= totalEnLoad
+    );
+    setRecommendedGenerator(filteredGenerators);
   };
 
   useEffect(() => {
     calculateRecommendations();
   }, [selectedParts]);
 
-  const handleSortChange = (e) => {
-    setSortOption(e.target.value);
+  const handleTabChange = (e) => {
+    const tab = e.target.value;
+    setActiveTab(tab);
+    setSelectedParts(initialSelectedParts);
   };
 
-  const handleUnitPartsSortChange = (e) => {
-    setUnitPartsSortOption(e.target.value);
+  const handleComponentChange = (component) => {
+    setActiveComponent(component);
   };
 
-  // Sorting functions
-  const sortData = (data, option) => {
-    return data.slice().sort((a, b) => {
-      if (option === "weight") return a.Weight - b.Weight;
-      if (option === "atk") return a["Attack Power"] - b["Attack Power"];
-      if (option === "enLoad") return a["EN Load"] - b["EN Load"];
-      if (option === "ap") return a["AP"] - b["AP"];
-      return 0;
-    });
-  };
+  const currentPartTypes =
+    activeTab === "weapons"
+      ? [
+          ...partTypes.filter((part) =>
+            ["Head", "Arms", "Booster"].includes(part.label)
+          ),
+          ...partTypes.filter((part) =>
+            [
+              "Right Arm unit",
+              "Left Arm unit",
+              "Right Back unit",
+              "Left Back unit",
+            ].includes(part.label)
+          ),
+        ]
+      : partTypes;
 
- const sortedOtherParts = otherParts.map((partType) => ({
-    ...partType,
-    data: sortData(partType.data, sortOption),
-  }));
-
-  const sortedUnitParts = unitsPartsType.map((partType) => ({
-    ...partType,
-    data: sortData(partType.data, unitPartsSortOption),
-  }));
+  const selectedPartNames = Object.keys(selectedParts)
+    .filter((key) => currentPartTypes.some((part) => part.label === key))
+    .reduce((obj, key) => {
+      obj[key] = selectedParts[key];
+      return obj;
+    }, {});
 
   return (
     <div className="container">
       <div className="content">
-        <h2>機体パーツを選択</h2>
-        <div>
+        {/* <div className="tabs">
           <label>
-            <span>並び替え:</span>
-            <select value={sortOption} onChange={handleSortChange}>
-              <option value="weight">重量順</option>
-              <option value="ap">AP順</option>
-              <option value="enLoad">EN容量順</option>
-            </select>
+            <input
+              type="radio"
+              name="tab"
+              value="weapons"
+              checked={activeTab === "weapons"}
+              onChange={handleTabChange}
+            />
+            武器を選択してパーツを推奨
           </label>
-        </div>
-        {sortedOtherParts.map((partType, index) => (
-          <div key={index} style={{ marginBottom: "5px" }}>
+          <label>
+            <input
+              type="radio"
+              name="tab"
+              value="parts"
+              checked={activeTab === "parts"}
+              onChange={handleTabChange}
+            />
+            パーツを選択して武器を推奨
+          </label>
+        </div> */}
+
+        <h2>使いたい機体パーツを選択</h2>
+        {otherWeapon.map((partType, index) => (
+          <div key={index} style={{ marginBottom: "10px" }}>
             <label>
               {partType.label}:
               <select
                 value={selectedParts[partType.label]}
                 onChange={(e) => handleSelectChange(e, partType.label)}
-                style={{ marginLeft: "10px" }}
               >
                 <option value="">Select {partType.label}</option>
                 {partType.data.map((item, idx) => (
@@ -155,49 +203,65 @@ function Main() {
           </div>
         ))}
 
-        <div style={{ marginTop: "10px" }}>
+        <div style={{ marginTop: "20px" }}>
           <h2>選択されたパーツ</h2>
-          <ul style={{ listStyle: "none", padding: 0 }}>
-            {Object.entries(selectedParts).map(([partType, selectedName], index) => (
-              <li key={index} style={{ marginBottom: "5px" }}>
-                {selectedName ? (
-                  <span>{partType}: {selectedName}</span>
-                ) : (
-                  <span>{partType}: Non Selected</span>
-                )}
-              </li>
-            ))}
+          <ul>
+            {Object.entries(selectedPartNames).map(
+              ([partType, selectedName]) => (
+                <li key={partType}>
+                  <strong>{partType}:</strong> {selectedName || "Not selected"}
+                </li>
+              )
+            )}
           </ul>
+        </div>
+
+        <div style={{ marginTop: "20px" }}>
+          <h2>データ表示するパーツを選択</h2>
+          <select onChange={handleParallelCoordinateChange}>
+            {parallelData.map((partType, index) => (
+              <option key={index} value={partType.label}>
+                {partType.label}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div className="component-toggle">
+          <button onClick={() => handleComponentChange("parallel")}>
+            平行座標プロット
+          </button>
+          <button onClick={() => handleComponentChange("radar")}>
+            レーダーチャート
+          </button>
         </div>
       </div>
 
       <div className="plot-container">
+        {/* {activeComponent === "parallel" ? (
+          <ParallelCoordinate
+            data={parallelCoordinateData}
+            highlighted={Object.values(selectedParts).filter((name) => name)}
+          />
+        ) : (
+          <RadarChart data={selectedParts} partTypes={partTypes} />
+        )} */}
         <RadarChart data={selectedParts} partTypes={partTypes} />
+        {/* <ParallelCoordinate
+          data={parallelCoordinateData}
+          highlighted={Object.values(selectedParts).filter((name) => name)}
+        /> */}
       </div>
 
       <div className="recommendations-container">
-        <h2>武器を選択</h2>
-        <div>
-          並び替え:
-          <label>
-            <select
-              value={unitPartsSortOption}
-              onChange={handleUnitPartsSortChange}
-            >
-              <option value="weight">重量順</option>
-              <option value="atk">攻撃力順</option>
-              <option value="enLoad">EN容量順</option>
-            </select>
-          </label>
-        </div>
-        {sortedUnitParts.map((partType, index) => (
-          <div key={index} style={{ marginBottom: "5px" }}>
+        <h2>推奨武器を選択</h2>
+        {unitsPartsType.map((partType, index) => (
+          <div key={index} style={{ marginBottom: "10px" }}>
             <label>
               {partType.label}:
               <select
                 value={selectedParts[partType.label]}
                 onChange={(e) => handleSelectChange(e, partType.label)}
-                style={{ marginLeft: "10px" }}
               >
                 <option value="">Select {partType.label}</option>
                 {partType.data.map((item, idx) => (
@@ -209,13 +273,6 @@ function Main() {
             </label>
           </div>
         ))}
-        <div style={{ marginTop: "10px" }}>
-          <h2>選択されたパーツの詳細</h2>
-          <p>合計重量: {totals.weight}</p>
-          <p>合計AP: {totals.ap}</p>
-          <p>合計EN容量: {totals.enLoad}</p>
-          <p>合計攻撃力: {totals.attackPower}</p>
-        </div>
       </div>
     </div>
   );

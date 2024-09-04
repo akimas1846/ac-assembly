@@ -7,9 +7,13 @@ import {
   PolarRadiusAxis,
   ResponsiveContainer,
   Tooltip,
+  Legend,
 } from "recharts";
 
 const RadarChartComponent = ({ data, partTypes }) => {
+  const width = "50%";
+  const height = 300;
+  const margin = { top: 50, right: 50, bottom: 50, left: 50 };
   const aggregatedData = {
     Weight: 0,
     "Arms Weight": 0,
@@ -105,7 +109,7 @@ const RadarChartComponent = ({ data, partTypes }) => {
 
   return (
     <div>
-      <ResponsiveContainer width="100%" height={600}>
+      <ResponsiveContainer width={width} height={height}>
         <RadarChart data={chartData}>
           <PolarGrid />
           <PolarAngleAxis dataKey="subject" />
@@ -116,6 +120,7 @@ const RadarChartComponent = ({ data, partTypes }) => {
             stroke="#8884d8"
             fill="#8884d8"
             fillOpacity={0.6}
+            isAnimationActive= {false}
           />
           <Radar
             name="Upper Limits"
@@ -125,10 +130,11 @@ const RadarChartComponent = ({ data, partTypes }) => {
             fillOpacity={0.3}
             dot={{ r: 4 }}
             data={upperLimitData}
+            isAnimationActive= {false}
           />
           <Tooltip />
+          <Legend />
         </RadarChart>
-
       </ResponsiveContainer>
       <div>
         {overWeight && <p>積載量超過</p>}

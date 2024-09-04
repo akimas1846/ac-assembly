@@ -11,7 +11,7 @@ function ParallelCoordinate({ data, highlighted = [] }) {
     d3.select(ref.current).selectAll("*").remove();
 
     const margin = { top: 50, right: 170, bottom: 50, left: 50 };
-    const width = 1000 - margin.left - margin.right;
+    const width = 700 - margin.left - margin.right;
     const dimensionHeight = 150;
 
     const allKeys = new Set();

@@ -6,7 +6,7 @@
     color: #ffffffca;
     text-align: center;
     padding: 10px;
-    width: 100%;
+    width: auto;
   }
   
   /* ヘッダーのタイトルスタイル */
@@ -22,7 +22,7 @@
     text-align: center;
     padding: 10px;
     bottom: 0;
-    width: 100%;
+    width: auto;
   }
   
   /* セレクトボックスのコンテナのスタイル */
