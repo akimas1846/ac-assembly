@@ -13,7 +13,6 @@ import {
 const RadarChartComponent = ({ data, partTypes }) => {
   const width = "50%";
   const height = 300;
-  const margin = { top: 50, right: 50, bottom: 50, left: 50 };
   const aggregatedData = {
     Weight: 0,
     "Arms Weight": 0,
@@ -110,17 +109,17 @@ const RadarChartComponent = ({ data, partTypes }) => {
   return (
     <div>
       <ResponsiveContainer width={width} height={height}>
-        <RadarChart data={chartData}>
+        <RadarChart data={chartData} domain={[0, 100000]}>
           <PolarGrid />
+          <PolarRadiusAxis domain={[0, 100000]} tick={false} />
           <PolarAngleAxis dataKey="subject" />
-          <PolarRadiusAxis angle={30} tickCount={6} domain={[0, 100000]} />
           <Radar
             name="Selected Data"
             dataKey="value"
             stroke="#8884d8"
             fill="#8884d8"
             fillOpacity={0.6}
-            isAnimationActive= {false}
+            isAnimationActive={false}
           />
           <Radar
             name="Upper Limits"
@@ -130,7 +129,7 @@ const RadarChartComponent = ({ data, partTypes }) => {
             fillOpacity={0.3}
             dot={{ r: 4 }}
             data={upperLimitData}
-            isAnimationActive= {false}
+            isAnimationActive={false}
           />
           <Tooltip />
           <Legend />

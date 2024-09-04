@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import acPartsData from "../data/acPartsData.json";
 import ParallelCoordinate from "./ParallelCoordinate";
 import RadarChart from "./RadarChart";
+import RecommendWeapon from "./RecomendWeapon";
 
 function Main() {
   const rightArmunit = acPartsData.armunit.filter((item) => !item.LeftOnly);
@@ -54,18 +55,49 @@ function Main() {
   const [parallelCoordinateData, setParallelCoordinateData] = useState(
     acPartsData.armunit
   );
+
+  const [checkedData, setCheckedData] = useState(false);
   const [recommendedLegs, setRecommendedLegs] = useState([]);
   const [recommendedArms, setRecommendedArms] = useState([]);
   const [recommendedGenerator, setRecommendedGenerator] = useState([]);
   const [activeTab, setActiveTab] = useState("parts");
   const [activeComponent, setActiveComponent] = useState("parallel");
 
+  const [rightArmIndex, setRightArmIndex] = useState(-1);
+  const [leftArmIndex, setLeftArmIndex] = useState(-1);
+  const [rightBackIndex, setRightBackIndex] = useState(-1);
+  const [leftBackIndex, setLeftBackIndex] = useState(-1);
+
+  useEffect(() => {
+    console.log(selectedParts);
+    checkedData ? console.log("selected") : console.log("no selected");
+  }, [selectedParts]);
+
   const handleSelectChange = (e, partType) => {
     const selectedName = e.target.value;
-    setSelectedParts((prevSelectedParts) => ({
-      ...prevSelectedParts,
+    const buffParts = {
+      ...selectedParts,
       [partType]: selectedName,
-    }));
+    };
+
+    setSelectedParts(buffParts);
+    setCheckedData(checkSelectedData(buffParts));
+  };
+
+  const checkSelectedData = (selectedParts) => {
+    const ignoredKeys = [
+      "Right Arm unit",
+      "Right Back unit",
+      "Left Arm unit",
+      "Left Back unit",
+    ];
+
+    return Object.keys(selectedParts).every((key) => {
+      if (ignoredKeys.includes(key)) {
+        return true;
+      }
+      return selectedParts[key] !== "";
+    });
   };
 
   const handleParallelCoordinateChange = (e) => {
@@ -102,6 +134,10 @@ function Main() {
         }
       }
     });
+
+    const missingParts = Object.entries(selectedParts)
+      .filter(([key, value]) => !value && !key.includes("unit"))
+      .map(([key]) => key);
 
     const filteredLegs = acPartsData.legs.filter(
       (leg) => leg["Load Limit"] >= totalWeight
@@ -157,6 +193,38 @@ function Main() {
       return obj;
     }, {});
 
+  const missingParts = Object.entries(selectedParts)
+    .filter(([key, value]) => !value && !key.includes("unit"))
+    .map(([key]) => key);
+
+  const handleMouseOverData = (index, idx) => {
+    console.log(index);
+    if (index === 0) {
+      console.log(idx);
+      setRightArmIndex(idx);
+    } else if (index === 1) {
+      console.log(idx);
+      setLeftArmIndex(idx);
+    } else if (index === 2) {
+      console.log(idx);
+      setRightBackIndex(idx);
+    } else {
+      console.log(idx);
+      setLeftBackIndex(idx);
+    }
+  };
+
+  const handleMouseOutData = (index) => {
+    if (index === 0) {
+      setRightArmIndex(-1);
+    } else if (index === 1) {
+      setLeftArmIndex(-1);
+    } else if (index === 2) {
+      setRightBackIndex(-1);
+    } else {
+      setLeftBackIndex(-1);
+    }
+  };
   return (
     <div className="container">
       <div className="content">
@@ -209,7 +277,8 @@ function Main() {
             {Object.entries(selectedPartNames).map(
               ([partType, selectedName]) => (
                 <li key={partType}>
-                  <strong>{partType}:</strong> {selectedName || "選択されていません"}
+                  <strong>{partType}:</strong>{" "}
+                  {selectedName || "選択されていません"}
                 </li>
               )
             )}
@@ -246,33 +315,31 @@ function Main() {
         ) : (
           <RadarChart data={selectedParts} partTypes={partTypes} />
         )} */}
-        <RadarChart data={selectedParts} partTypes={partTypes} />
-        {/* <ParallelCoordinate
+        {/* <RadarChart data={selectedParts} partTypes={partTypes} />
+        <ParallelCoordinate
           data={parallelCoordinateData}
           highlighted={Object.values(selectedParts).filter((name) => name)}
         /> */}
+        <RadarChart data={selectedParts} partTypes={partTypes} />
       </div>
-
       <div className="recommendations-container">
         <h2>推奨武器を選択</h2>
-        {unitsPartsType.map((partType, index) => (
-          <div key={index} style={{ marginBottom: "10px" }}>
-            <label>
-              {partType.label}:
-              <select
-                value={selectedParts[partType.label]}
-                onChange={(e) => handleSelectChange(e, partType.label)}
-              >
-                <option value="">{partType.label}を選択</option>
-                {partType.data.map((item, idx) => (
-                  <option key={idx} value={item.Name}>
-                    {item.Name}
-                  </option>
-                ))}
-              </select>
-            </label>
+        {checkedData ? (
+          <RecommendWeapon
+            unitsPartsType={unitsPartsType}
+            selectedParts={selectedParts}
+            handleSelectChange={handleSelectChange}
+          />
+        ) : (
+          <div>
+            パーツを選択してください。
+            <ul>
+              {missingParts.map((partType, index) => (
+                <li key={index}>{partType}</li>
+              ))}
+            </ul>
           </div>
-        ))}
+        )}
       </div>
     </div>
   );
