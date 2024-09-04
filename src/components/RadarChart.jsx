@@ -10,9 +10,47 @@ import {
   Legend,
 } from "recharts";
 
+const CustomTooltip = (
+  { active, payload },
+  missionImpossible,
+  overENLoad,
+  overArmsWeight
+) => {
+  if (active && payload && payload.length) {
+    const { value } = payload[0].payload;
+    const limitData = payload[1] ? payload[1].value : null;
+
+    return (
+      <div
+        className="custom-tooltip"
+        style={{
+          backgroundColor: "#fff",
+          padding: "10px",
+          border: "1px solid #ccc",
+        }}
+      >
+        <p>{`現在の値: ${value}`}</p>
+        {limitData === 0 ? <p></p> : <p>上限値:{limitData}</p>}
+        {missionImpossible && overENLoad ? (
+          <p style={{ color: "red" }}>{`EN出力不足`}</p>
+        ) : (
+          <p></p>
+        )}
+        {missionImpossible && overArmsWeight ? (
+          <p style={{ color: "red" }}>腕部積載量超過</p>
+        ) : (
+          <p></p>
+        )}
+      </div>
+    );
+  }
+
+  return null;
+};
+
 const RadarChartComponent = ({ data, partTypes }) => {
-  const width = "50%";
-  const height = 300;
+  const width = "100%";
+  const height = 400;
   const aggregatedData = {
     Weight: 0,
     "Arms Weight": 0,
@@ -71,9 +109,24 @@ const RadarChartComponent = ({ data, partTypes }) => {
   });
 
   const chartData = [
-    { subject: "Weight", value: aggregatedData.Weight },
-    { subject: "Arms Weight", value: aggregatedData["Arms Weight"] },
-    { subject: "EN Load", value: aggregatedData["EN Load"] },
+    {
+      subject: "Weight",
+      value: aggregatedData.Weight,
+      overLimit: aggregatedData.Weight > radiusAxisProps.Weight.domain[1],
+    },
+    {
+      subject: "Arms Weight",
+      value: aggregatedData["Arms Weight"],
+      overLimit:
+        aggregatedData["Arms Weight"] >
+        radiusAxisProps["Arms Weight"].domain[1],
+    },
+    {
+      subject: "EN Load",
+      value: aggregatedData["EN Load"],
+      overLimit:
+        aggregatedData["EN Load"] > radiusAxisProps["EN Capacity"].domain[1],
+    },
     { subject: "Impact", value: aggregatedData.Impact },
     {
       subject: "Direct Hit Adjustment",
@@ -106,13 +159,36 @@ const RadarChartComponent = ({ data, partTypes }) => {
     aggregatedData["EN Load"] > radiusAxisProps["EN Capacity"].domain[1];
   const missionImpossible = overArmsWeight || overENLoad;
 
+  const backgroundColor = missionImpossible
+    ? "rgba(255, 0, 0, 0.4)"
+    : "rgba(0, 255, 0, 0.1)";
+
   return (
-    <div>
+    <div style={{ backgroundColor }}>
       <ResponsiveContainer width={width} height={height}>
         <RadarChart data={chartData} domain={[0, 100000]}>
           <PolarGrid />
           <PolarRadiusAxis domain={[0, 100000]} tick={false} />
-          <PolarAngleAxis dataKey="subject" />
+          <PolarAngleAxis
+            dataKey="subject"
+            tick={({ payload, x, y, textAnchor, stroke, radius }) => {
+              const isOverLimit = chartData.find(
+                (data) => data.subject === payload.value
+              )?.overLimit;
+              const color = isOverLimit ? "red" : "gray";
+              return (
+                <text
+                  x={x}
+                  y={y}
+                  textAnchor={textAnchor}
+                  fill={color}
+                  fontSize={12}
+                >
+                  {payload.value}
+                </text>
+              );
+            }}
+          />
           <Radar
             name="Selected Data"
             dataKey="value"
@@ -131,15 +207,24 @@ const RadarChartComponent = ({ data, partTypes }) => {
             data={upperLimitData}
             isAnimationActive={false}
           />
-          <Tooltip />
+          <Tooltip content={<CustomTooltip overENLoad={overENLoad} />} />
           <Legend />
         </RadarChart>
       </ResponsiveContainer>
-      <div>
-        {overWeight && <p>積載量超過</p>}
-        {overArmsWeight && <p>腕部積載量超過</p>}
-        {overENLoad && <p>EN出力不足</p>}
-        {missionImpossible && <p>出撃不可</p>}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+        }}
+      >
+        <div style={{ color: overWeight ? "red" : "gray" }}>積載量超過</div>
+        <div style={{ color: overArmsWeight ? "red" : "gray" }}>
+          腕部積載量超過
+        </div>
+        <div style={{ color: overENLoad ? "red" : "gray" }}>EN出力不足</div>
+        <div style={{ color: missionImpossible ? "red" : "gray" }}>
+          出撃不可
+        </div>
       </div>
     </div>
   );

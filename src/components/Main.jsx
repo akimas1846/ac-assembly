@@ -285,7 +285,7 @@ function Main() {
           </ul>
         </div>
 
-        <div style={{ marginTop: "20px" }}>
+        {/* <div style={{ marginTop: "20px" }}>
           <h2>データ表示するパーツを選択</h2>
           <select onChange={handleParallelCoordinateChange}>
             {parallelData.map((partType, index) => (
@@ -294,7 +294,7 @@ function Main() {
               </option>
             ))}
           </select>
-        </div>
+        </div> */}
 
         {/* <div className="component-toggle">
           <button onClick={() => handleComponentChange("parallel")}>
