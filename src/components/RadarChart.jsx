@@ -48,7 +48,13 @@ const CustomTooltip = (
   return null;
 };
 
-const RadarChartComponent = ({ data, partTypes }) => {
+const RadarChartComponent = ({
+  data,
+  partTypes,
+  hoveringItem,
+  checkedData,
+}) => {
+  console.log(checkedData);
   const width = "100%";
   const height = 400;
   const aggregatedData = {
@@ -159,9 +165,10 @@ const RadarChartComponent = ({ data, partTypes }) => {
     aggregatedData["EN Load"] > radiusAxisProps["EN Capacity"].domain[1];
   const missionImpossible = overArmsWeight || overENLoad;
 
-  const backgroundColor = missionImpossible
-    ? "rgba(255, 0, 0, 0.4)"
-    : "rgba(0, 255, 0, 0.1)";
+  const backgroundColor =
+    missionImpossible || !checkedData
+      ? "rgba(255, 0, 0, 0.4)"
+      : "rgba(0, 255, 0, 0.1)";
 
   return (
     <div style={{ backgroundColor }}>
@@ -207,24 +214,57 @@ const RadarChartComponent = ({ data, partTypes }) => {
             data={upperLimitData}
             isAnimationActive={false}
           />
+          {hoveringItem !== null ? (
+            <Radar
+              name="Upper Limits"
+              dataKey="value"
+              stroke="#ff7300"
+              fill="#ff7300"
+              fillOpacity={0.3}
+              dot={{ r: 4 }}
+              data={hoveringItem}
+              isAnimationActive={false}
+            />
+          ) : (
+            <></>
+          )}
           <Tooltip content={<CustomTooltip overENLoad={overENLoad} />} />
           <Legend />
         </RadarChart>
       </ResponsiveContainer>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-around",
-        }}
-      >
-        <div style={{ color: overWeight ? "red" : "gray" }}>積載量超過</div>
-        <div style={{ color: overArmsWeight ? "red" : "gray" }}>
-          腕部積載量超過
-        </div>
-        <div style={{ color: overENLoad ? "red" : "gray" }}>EN出力不足</div>
-        <div style={{ color: missionImpossible ? "red" : "gray" }}>
-          出撃不可
-        </div>
+      <div>
+        {!missionImpossible && checkedData ? (
+          <div
+            style={{
+              color: "green",
+              display: "flex",
+              justifyContent: "space-around",
+              fontSize: "30px",
+            }}
+          >
+            出撃可能!
+          </div>
+        ) : (
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-around",
+            }}
+          >
+            <div style={{ color: overWeight ? "red" : "gray" }}>積載量超過</div>
+            <div style={{ color: overArmsWeight ? "red" : "gray" }}>
+              腕部積載量超過
+            </div>
+            <div style={{ color: overENLoad ? "red" : "gray" }}>EN出力不足</div>
+            <div
+              style={{
+                color: missionImpossible || !checkedData ? "red" : "gray",
+              }}
+            >
+              出撃不可
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

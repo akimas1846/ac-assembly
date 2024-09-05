@@ -67,3 +67,45 @@
     flex: 1;
     padding: 10px;
   }
+
+  .custom-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .selected-item {
+    border: 1px solid #ccc;
+    padding: 8px;
+    cursor: pointer;
+    background-color: white; /* 背景色を設定 */
+    z-index: 1; /* 他の要素より上に表示 */
+    width: 300px; /* 幅を調整（必要に応じて変更） */
+  }
+  
+  .dropdown-list {
+    display: none;
+    position: absolute;
+    border: 1px solid #ccc;
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%; /* 親要素と同じ幅に設定 */
+    max-height: 200px; /* 最大高さを設定（必要に応じて変更） */
+    overflow-y: auto; /* 縦方向にスクロール可能にする */
+    z-index: 2; /* 他の要素より上に表示 */
+  }
+  
+  .custom-dropdown:hover .dropdown-list {
+    display: block;
+  }
+  
+  .dropdown-list li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .dropdown-list li.selected {
+    background-color: #e0e0e0;
+  }
+  

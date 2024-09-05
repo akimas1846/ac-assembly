@@ -62,7 +62,7 @@ function Main() {
   const [recommendedGenerator, setRecommendedGenerator] = useState([]);
   const [activeTab, setActiveTab] = useState("parts");
   const [activeComponent, setActiveComponent] = useState("parallel");
-
+  const [hoveredItem, setHoveredItem] = useState(null);
   const [rightArmIndex, setRightArmIndex] = useState(-1);
   const [leftArmIndex, setLeftArmIndex] = useState(-1);
   const [rightBackIndex, setRightBackIndex] = useState(-1);
@@ -320,7 +320,12 @@ function Main() {
           data={parallelCoordinateData}
           highlighted={Object.values(selectedParts).filter((name) => name)}
         /> */}
-        <RadarChart data={selectedParts} partTypes={partTypes} />
+        <RadarChart
+          data={selectedParts}
+          partTypes={partTypes}
+          hoveringItem={hoveredItem}
+          checkedData={checkedData}
+        />
       </div>
       <div className="recommendations-container">
         <h2>推奨武器を選択</h2>
@@ -329,6 +334,7 @@ function Main() {
             unitsPartsType={unitsPartsType}
             selectedParts={selectedParts}
             handleSelectChange={handleSelectChange}
+            setHoveredItem={setHoveredItem}
           />
         ) : (
           <div>
